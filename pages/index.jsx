@@ -13,11 +13,6 @@ import {
   GithubOutlined
 } from "@ant-design/icons";
 
-
-const { Meta } = Card;
-
-const { Header, Content, Footer } = Layout;
-
 const contentStyle = {
   height: '370px',
   color: '#fff',
@@ -25,23 +20,28 @@ const contentStyle = {
   textAlign: 'center',
 };
 
+const { Meta } = Card;
 
-const changeBackground = () => {
-  if (window.scrollY >= 80) {
-    setNavbar(true);
-  } else {
-    setNavbar(false);
-  }
-};
+const { Header, Content, Footer } = Layout;
 
-useEffect(() => {
-  window.addEventListener("scroll", changeBackground);
-  return () => window.removeEventListener("scroll", changeBackground);
-});
-
-const home = () => {
+const Home = () => {
   const [navbar, setNavbar] = useState(false);
 
+  
+ 
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => window.removeEventListener("scroll", changeBackground);
+  });
 
   return (
     <Layout id="home">
@@ -109,7 +109,7 @@ const home = () => {
             <h6 className='main-subtitle'>Sviluppatore Web</h6>
             <p className="main-paragraph">I design and code beautifully simple things, and I love what I do.</p>
             <div className='main-scroll'>
-            <h3 class='animated bounce' style={{fontSize: 24, color: '#F6F6F6'}}>Scroll down⠀<img style={{width: 20}} src="scroll-down.svg"/></h3>
+            <h3 className='animated bounce' style={{fontSize: 24, color: '#F6F6F6'}}>Scroll down⠀<img style={{width: 20}} src="scroll-down.svg"/></h3>
             </div>
             </div>
             </Col>
@@ -197,4 +197,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
