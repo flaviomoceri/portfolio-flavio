@@ -104,7 +104,7 @@ const Home = () => {
             </Col>
             <Col span={7}>
               <div>
-            <h1 className='main-title'>Hi, I&apos;am Flavio</h1>
+            <h1 className='main-title'>Hi, I&apos;m Flavio</h1>
             <h6 className='main-subtitle'>Sviluppatore Web</h6>
             <p className="main-paragraph">I design and code beautifully simple things, and I love what I do.</p>
             <div className='main-scroll'>
