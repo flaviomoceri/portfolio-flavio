@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <Layout id="home">
       <Head>
-        <title>Flavio Moceri's Portfolio</title>
+        <title>Flavio Moceri&apos;s Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <link rel="stylesheet" href="animate.min.css"/>
@@ -58,7 +58,6 @@ const Home = () => {
         >
           <Menu
           theme="light"
-            className="menu"
             className={navbar ? "ant-layout-header" : "background-image"}
             mode="horizontal"
             defaultSelectedKeys={["1"]}
@@ -105,7 +104,7 @@ const Home = () => {
             </Col>
             <Col span={7}>
               <div>
-            <h1 className='main-title'>Hi, I'm Flavio</h1>
+            <h1 className='main-title'>Hi, I&apos;sm Flavio</h1>
             <h6 className='main-subtitle'>Sviluppatore Web</h6>
             <p className="main-paragraph">I design and code beautifully simple things, and I love what I do.</p>
             <div className='main-scroll'>
