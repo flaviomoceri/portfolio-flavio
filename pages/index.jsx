@@ -85,7 +85,7 @@ const Home = () => {
             style={{
               marginLeft: "25%",
             }}>
-              <a href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/" target="_blank">
+              <a href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/" target="_blank" rel="noreferrer">
             <Button icon={<LinkedinOutlined />} rel="noreferrer" style={{'backgroundColor': "#02d783", 'borderColor': 'black', 'color': '#FDFFFF', 'borderRadius': '15px'}} >
           LinkedIn
         </Button>
