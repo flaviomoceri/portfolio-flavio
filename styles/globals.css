@@ -140,6 +140,20 @@ animation-iteration-count: infinite;
   background: black !important;
   opacity: 1;
 }
+.avatar{
+  width: 40%;
+    padding-top: 170px;
+    margin-left: 40%;
+}
+.job {
+  margin-left: 32%;
+    margin-top: 2px;
+    font-size: 29px;
+    font-weight: 100;
+    font-style: oblique;
+    font-family: fantasy;
+    word-spacing: 12px;
+}
 .ant-carousel .slick-dots li button {
   display: block;
   width: 100%;
@@ -416,3 +430,4 @@ input, button, select, optgroup, textarea {
     width: 25%;
     display: block !important;
 }
+

@@ -112,6 +112,10 @@ const Home = () => {
             </div>
             </div>
             </Col>
+            <Col span={10}>
+              <img className='avatar' src='myAvatar.svg'/>
+              <h1 className="job">FRONTEND DEVELOPER</h1>
+            </Col>
           </Row>
         </main>
         <Content>
@@ -186,7 +190,9 @@ const Home = () => {
   </Row>
     </div>
   </Carousel>
-  <h1>cazzo dio</h1>
+  <iframe src="www.flaviomoceri.it">
+ <p>Il browser in uso non supporta iframe</p>
+ </iframe>
         </Content>
       </body>
       <Footer className="footer">
