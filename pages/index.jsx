@@ -6,11 +6,12 @@ import React, { useState, useEffect } from "react";
 import { Card } from "antd";
 import {Button } from "antd";
 import { Carousel } from 'antd';
-
+import { Divider } from 'antd';
 import {
   InstagramOutlined,
   LinkedinOutlined,
-  GithubOutlined
+  GithubOutlined,
+  LineOutlined
 } from "@ant-design/icons";
 
 const contentStyle = {
@@ -190,9 +191,22 @@ const Home = () => {
   </Row>
     </div>
   </Carousel>
-  <iframe src="www.flaviomoceri.it">
- <p>Il browser in uso non supporta iframe</p>
- </iframe>
+   <div style={{backgroundColor: '#f5f5f5'}}>
+     <div>
+       <div><img src="about.png"/></div>
+       <h2 className="title-paragraph2">About Me</h2>
+       <div className= "paragraph2">
+       <h7>Always step forward<br/> and make a difference<br/> for better services</h7>
+       </div>
+       {<LineOutlined style={{width: "33%", 'fontSize': '35px', 'color': '#02d783', marginBottom: 30, marginTop: 20}} />}
+       <div style={{marginLeft: '15%', paddingBottom: 30}}>
+       <Row>
+      <Col span={11}><p>To create a stunning presentation, it's best to simplify your thoughts. Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. You can then organize them into your introduction, your main content, and your conclusion.</p></Col>
+      <Col span={12} offset={1}><p>To create a stunning presentation, it's best to simplify your thoughts. Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. You can then organize them into your introduction, your main content, and your conclusion.</p></Col>
+    </Row>
+    </div>
+     </div>
+   </div>
         </Content>
       </body>
       <Footer className="footer">
