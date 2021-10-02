@@ -5,6 +5,7 @@ import { Row, Col } from "antd";
 import React, { useState, useEffect } from "react";
 import { Card } from "antd";
 import {Button } from "antd";
+import { Form, Input, Select } from 'antd';
 import { Carousel } from 'antd';
 import { Timeline } from 'antd';
 import { Divider } from 'antd';
@@ -13,10 +14,12 @@ import {
   LinkedinOutlined,
   GithubOutlined,
   LineOutlined,
-  ClockCircleOutlined,
+  PhoneOutlined,
   CodeOutlined,
   ShoppingCartOutlined,
-  BookOutlined
+  BookOutlined,
+  MailOutlined,
+  ChromeOutlined
 } from "@ant-design/icons";
 
 const contentStyle = {
@@ -27,14 +30,34 @@ const contentStyle = {
 };
 
 const { Meta } = Card;
+const { TextArea } = Input;
 
 const { Header, Content, Footer } = Layout;
 
-const Home = () => {
-  const [navbar, setNavbar] = useState(false);
+
+
+
 
   
- 
+
+
+const Home = () => {
+  const [navbar, setNavbar] = useState(false);
+  const [form] = Form.useForm();
+
+
+  const onFinish = (values) => {
+    console.log(values);
+  };
+
+  const onReset = () => {
+    form.resetFields();
+  };
+
+  
+
+
+
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -255,10 +278,82 @@ In the winter of 2019 with the pandemic, many shops needed a site to continue wo
     </p>
     </Timeline.Item>
   </Timeline>
+  <div style={{marginTop: 50, marginBottom: 70}}>
+     <div>
+     <div>
+       <Card className='form'>
+     <Form  form={form} name="control-hooks" onFinish={onFinish}>
+      <Form.Item
+        name="email"
+        label="email"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+      >
+        <Input placeholder="Enter your email" />
+      </Form.Item>
+      <Form.Item
+        name="object"
+        label="object"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+      >
+        <Input placeholder="Object"  />
+      </Form.Item>
+      <Form.Item
+        name="body"
+        label="body"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+      >
+        <TextArea
+          autoSize={{ minRows: 3, maxRows: 15 }}
+        />
+      </Form.Item>
+      <Form.Item style={{marginLeft: '11%'}}>
+        <Button type="primary" htmlType="submit" style={{marginRight: 20}}>
+          Submit
+        </Button>
+        <Button htmlType="button" onClick={onReset}>
+          Reset
+        </Button>
+      </Form.Item>
+    </Form>
+    </Card>
+     </div>
+       <div className= "paragraph-contact">
+       <h7>How to contact me</h7>
+       </div>
+       {<LineOutlined style={{width: "33%", 'fontSize': '35px', 'color': '#02d783', marginBottom: 20}} />}
+       <a href="tel:+393883289985" rel="noreferrer" target="_blank">
+       <div style={{marginLeft: '15%', paddingBottom: 10}}>
+       <p className='contact'>{<PhoneOutlined style={{color: '#02d783', marginRight: '9px', fontSize: '19px'}}/>}+39 388 328 9985</p>
+    </div>
+    </a>
+    <a href="mailto:moceri.flavio@gmail.com?subject=Feedback&body=Message" rel="noreferrer" target="_blank">
+    <div style={{marginLeft: '15%', paddingBottom: 10}}>
+       <p className='contact'>{<MailOutlined style={{color: '#02d783', marginRight: '9px', fontSize: '19px'}}/>}moceri.flavio@gmail.com</p>
+    </div>
+    </a>
+    <a href="https://flaviomoceri.it" rel="noreferrer" target="_blank">
+    <div style={{marginLeft: '15%', paddingBottom: 10}}>
+       <p className='contact'>{<ChromeOutlined style={{color: '#02d783', marginRight: '9px', fontSize: '19px'}}/>}flaviomoceri.it</p>
+    </div>
+    </a>
+     </div>
+   </div>
         </Content>
       </body>
       <Footer className="footer">
-       <h7>Coded with 💚 by <a className="text_footer" rel="noreferrer" href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/" target="_blank">@flaviomoceri</a></h7>
+       <h7>Coded with 💚 by <a className="text_footer" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/">@flaviomoceri</a></h7>
       </Footer>
     </Layout>
   );

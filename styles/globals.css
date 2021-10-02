@@ -114,6 +114,13 @@ textarea.ant-input {
    width: 47%;
     margin-right: 40px;
 }
+.form {
+  width: 50%;
+    float: right;
+    margin-right: 8% !important;
+    margin-top: 20px !important;
+    border-radius: 20px !important;
+}
 .ant-timeline-item-head-blue {
   color: #02d783 !important;
   border-color: #02d783 !important;
@@ -130,6 +137,16 @@ textarea.ant-input {
   font-size: 24px;
   word-spacing: 4px;
   font-weight: 100;
+}
+.paragraph-contact {
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 15%;
+}
+.contact {
+  font-size: 14px;
+    font-style: italic;
+    color: black;
 }
 .boxshadow_card{
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%)
@@ -278,6 +295,14 @@ h1, h3, h4, h5, h2 {
   color: rgba(0, 0, 0, 0.85);
   line-height: 65px !important;
   background: #0a0a0a !important;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  background: #02d783 !important;
+}
+.ant-btn-primary {
+  border-color: #02d783 !important;
+  background: #02d783 !important;
+  
 }
 
 
