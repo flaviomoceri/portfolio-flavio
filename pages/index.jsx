@@ -6,12 +6,17 @@ import React, { useState, useEffect } from "react";
 import { Card } from "antd";
 import {Button } from "antd";
 import { Carousel } from 'antd';
+import { Timeline } from 'antd';
 import { Divider } from 'antd';
 import {
   InstagramOutlined,
   LinkedinOutlined,
   GithubOutlined,
-  LineOutlined
+  LineOutlined,
+  ClockCircleOutlined,
+  CodeOutlined,
+  ShoppingCartOutlined,
+  BookOutlined
 } from "@ant-design/icons";
 
 const contentStyle = {
@@ -115,7 +120,7 @@ const Home = () => {
             </Col>
             <Col span={10}>
               <img className='avatar' src='myAvatar.svg'/>
-              <h1 className="job">FRONTEND DEVELOPER</h1>
+              <h1 className={"job"}>FRONTEND DEVELOPER</h1>
             </Col>
           </Row>
         </main>
@@ -192,21 +197,64 @@ const Home = () => {
     </div>
   </Carousel>
    <div style={{backgroundColor: '#f5f5f5'}}>
+     <Divider />
      <div>
-       <div><img src="about.png"/></div>
+       <div><img className="about-image" src="about.png"/></div>
        <h2 className="title-paragraph2">About Me</h2>
        <div className= "paragraph2">
-       <h7>Always step forward<br/> and make a difference<br/> for better services</h7>
+       <h7>The secret of getting<br/>ahead is getting started.</h7>
        </div>
-       {<LineOutlined style={{width: "33%", 'fontSize': '35px', 'color': '#02d783', marginBottom: 30, marginTop: 20}} />}
-       <div style={{marginLeft: '15%', paddingBottom: 30}}>
+       {<LineOutlined style={{width: "33%", 'fontSize': '35px', 'color': '#02d783', marginBottom: 20, marginTop: 20}} />}
+       <div style={{marginLeft: '15%', paddingBottom: 10}}>
        <Row>
-      <Col span={11}><p>To create a stunning presentation, it's best to simplify your thoughts. Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. You can then organize them into your introduction, your main content, and your conclusion.</p></Col>
-      <Col span={12} offset={1}><p>To create a stunning presentation, it's best to simplify your thoughts. Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. You can then organize them into your introduction, your main content, and your conclusion.</p></Col>
+      <Col span={20}><p>I'm a novice frontend developer, I enjoy programming simple things and solving new problems every day. I think that teamwork is the most important part to carry out great projects because being together with other people who share your passions not only gives you the opportunity to expose yourself, but to learn aspects, details that you would have neglected until then.</p></Col>
     </Row>
     </div>
      </div>
+     <Divider />
    </div>
+   <Timeline mode="alternate" style={{width: '99%', marginTop: 100}}>
+    <Timeline.Item>
+      <h1 className="title_timeline">
+        The beginning is always the hardest part.
+        </h1>
+        <img className='image_timeline' src="start.png"/>
+    <p style={{marginRight: 20, marginLeft:20}}>
+    I owe everything to my brother, he passed on his passion to me. I thought several times about leaving for friends or other, but I always continued, I feel that if you really believe it, sooner or later it happens and over time realized that the thinking of others is not so important.
+    </p>
+    </Timeline.Item>
+    <Timeline.Item dot={<CodeOutlined style={{ fontSize: '16px' }} />}>
+      <h1 className="title_timeline">Codecademy and Myself
+      </h1>
+      <img className='image_timeline' src="codecademy.png"/>
+      <p style={{marginRight: 20, marginLeft:70}}>
+      Through Codecademy and myself, I was able to acquire the knowledge, thanks to the internet now anyone can learn everything they want, there are no more excuses, it all depends on their own determination,
+      </p>
+    </Timeline.Item>
+    <Timeline.Item  dot={<ShoppingCartOutlined style={{ fontSize: '16px' }} />}>
+      <h1 className="title_timeline">The E-Commerce World</h1>
+      <img className='image_timeline' src="e-commerce.png"/>
+    <p style={{marginRight: 20, marginLeft:20}}>
+In the winter of 2019 with the pandemic, many shops needed a site to continue working, scared by the situation, so I started making them, gaining a lot of experience.
+</p>
+</Timeline.Item>
+    <Timeline.Item dot={<BookOutlined style={{ fontSize: '16px' }} />}>
+      <a target="_blank" href="https://www.ricerca-libri.it/"><h1 className="title_timeline">Ricerca-Libri.it
+      </h1>
+      </a>
+      <img className='image_timeline' src="ricerca.png"/>
+    <p style={{marginRight: 20, marginLeft:70}}>
+    I create this site to learn and for fun, you can know the books to acquire to start the school year. Through WebScraping I can get the information by creating a bot from Libraccio.it and printing it on my site.
+    </p>
+    </Timeline.Item>
+    <Timeline.Item>
+   <h1 className="title_timeline">For the future</h1>
+      <img className='image_timeline' src="future.png"/>
+    <p style={{marginRight: 20, marginLeft:20}}>
+    This year I will finish high school. For the future, my choice is to do a three-year degree at LUISS, such as: "Management and Computer Science" or "Economics and Management", or to enroll at the 42 Rome LUISS school, because I really consider it revolutionary and I am very attracted to it.
+    </p>
+    </Timeline.Item>
+  </Timeline>
         </Content>
       </body>
       <Footer className="footer">

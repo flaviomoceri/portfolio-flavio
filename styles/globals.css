@@ -109,11 +109,19 @@ textarea.ant-input {
   font-size: 35px ;
   font-weight: 600;
 }
+.about-image {
+  float: right;
+   width: 47%;
+    margin-right: 40px;
+}
+.ant-timeline-item-head-blue {
+  color: #02d783 !important;
+  border-color: #02d783 !important;
+}
 .title-paragraph2 {
   color: black !important;
     margin-left: 15%;
     font-size: 42px !important;
-    padding-top: 25px;
     padding-bottom: 15px;
     margin-top: 70px;
 }
@@ -183,6 +191,24 @@ animation-iteration-count: infinite;
   opacity: 0.3;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+.ant-carousel .slick-dots{
+  z-index: 1 !important;
+}
+.image_timeline {
+  width: 50%;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+.title_timeline{
+  font-weight: 400;
+  color: black !important;
+  margin-right: 20px;
+
 }
 .main-paragraph {
   font-size: 17px;
