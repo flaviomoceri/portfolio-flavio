@@ -207,7 +207,7 @@ const Home = () => {
        {<LineOutlined style={{width: "33%", 'fontSize': '35px', 'color': '#02d783', marginBottom: 20, marginTop: 20}} />}
        <div style={{marginLeft: '15%', paddingBottom: 10}}>
        <Row>
-      <Col span={20}><p>I'm a novice frontend developer, I enjoy programming simple things and solving new problems every day. I think that teamwork is the most important part to carry out great projects because being together with other people who share your passions not only gives you the opportunity to expose yourself, but to learn aspects, details that you would have neglected until then.</p></Col>
+      <Col span={20}><p>I&apos;m a novice frontend developer, I enjoy programming simple things and solving new problems every day. I think that teamwork is the most important part to carry out great projects because being together with other people who share your passions not only gives you the opportunity to expose yourself, but to learn aspects, details that you would have neglected until then.</p></Col>
     </Row>
     </div>
      </div>
@@ -239,7 +239,7 @@ In the winter of 2019 with the pandemic, many shops needed a site to continue wo
 </p>
 </Timeline.Item>
     <Timeline.Item dot={<BookOutlined style={{ fontSize: '16px' }} />}>
-      <a target="_blank" href="https://www.ricerca-libri.it/"><h1 className="title_timeline">Ricerca-Libri.it
+      <a target="_blank" rel="noreferrer" href="https://www.ricerca-libri.it/"><h1 className="title_timeline">Ricerca-Libri.it
       </h1>
       </a>
       <img className='image_timeline' src="ricerca.png"/>
