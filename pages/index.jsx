@@ -251,7 +251,7 @@ In the winter of 2019 with the pandemic, many shops needed a site to continue wo
    <h1 className="title_timeline">For the future</h1>
       <img className='image_timeline' src="future.png"/>
     <p style={{marginRight: 20, marginLeft:20}}>
-    This year I will finish high school. For the future, my choice is to do a three-year degree at LUISS, such as: "Management and Computer Science" or "Economics and Management", or to enroll at the 42 Rome LUISS school, because I really consider it revolutionary and I am very attracted to it.
+    This year I will finish high school. For the future, my choice is to do a three-year degree at LUISS, such as: Management and Computer Science or Economics and Management, or to enroll at the 42 Rome LUISS school, because I really consider it revolutionary and I am very attracted to it.
     </p>
     </Timeline.Item>
   </Timeline>
