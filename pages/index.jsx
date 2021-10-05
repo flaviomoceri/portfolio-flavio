@@ -4,6 +4,7 @@ import { Layout, Menu } from "antd";
 import { Row, Col } from "antd";
 import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 import { Card } from "antd";
 import { Button, Popover } from "antd";
 import { Modal, Space } from "antd";
@@ -36,6 +37,7 @@ const { Meta } = Card;
 const { TextArea } = Input;
 
 const { Header, Content, Footer } = Layout;
+
 
 
 
@@ -128,6 +130,18 @@ const Home = () => {
     window.addEventListener("scroll", changeBackground);
     return () => window.removeEventListener("scroll", changeBackground);
   });
+
+  const MyComponent = () => {
+
+    const handleType = (count) => {
+      // access word count number
+      console.log(count)}
+    }
+  
+    const handleDone = () => {
+      console.log(`Done after 5 loops!`)
+    }
+  
 
   return (
     <Layout id="home">
@@ -407,6 +421,23 @@ const Home = () => {
               </p>
             </Timeline.Item>
           </Timeline>
+          <div>
+            <h1 className='text-machine'>
+            Among the knowledge acquired over the years, 
+            I tried to learn the most important technologies that<br/> 
+            could allow me to develop the best possible knowledge, 
+            such as <span style={{color: "#02d783"}}><Typewriter
+            words={['ReactJS', 'Html', 'CSS', 'Python', 'Json', 'MongoDB']}
+            loop
+            cursor
+            cursorStyle='|'
+            typeSpeed={120}
+            deleteSpeed={50}
+            delaySpeed={3000}
+            onLoopDone={handleDone}
+          /></span>
+            </h1>
+            </div>
           <div style={{ marginTop: 50, marginBottom: 70 }}>
             <div>
               <div>

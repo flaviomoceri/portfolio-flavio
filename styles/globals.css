@@ -230,6 +230,18 @@ animation-iteration-count: infinite;
   width: 88%;
   margin-left: 10px;
 }
+.text-machine {
+  margin-left: auto;
+    color: grey !important;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 100;
+}
 .ant-carousel .slick-dots{
   z-index: 1 !important;
 }
