@@ -170,9 +170,9 @@ const Home = () => {
             marginTop: "30%",
           }}
         >
-          <MenuItem>About</MenuItem>
-          <MenuItem>Project</MenuItem>
-          <MenuItem>Skills</MenuItem>
+          <MenuItem ><a onClick={onClose}  href="#about"><p style={{color: 'grey'}}>About</p></a></MenuItem>
+          <MenuItem ><a onClick={onClose} style={{color: 'grey !important'}} href="#skill"><p style={{color: 'grey'}}>Skills</p></a></MenuItem>
+          <MenuItem ><a onClick={onClose} style={{color: 'grey !important'}} href="#contact"><p style={{color: 'grey'}}>Contact</p></a></MenuItem>
         </Menu>
         <Button
           onClick={showModal}
@@ -236,6 +236,9 @@ const Home = () => {
                 <img src="logo_piccolo.png" />
               </a>
             </Menu.Item>
+            <Menu.Item className="button-drawer" onClick={showDrawer}>
+              <a><MenuOutlined /></a>
+            </Menu.Item>
             <Menu.Item key="2" className="menuitem-drawer">
               <a href="#about">About</a>
             </Menu.Item>
@@ -264,9 +267,6 @@ const Home = () => {
                   LinkedIn
                 </Button>
               </a>
-            </Menu.Item>
-            <Menu.Item key="7" className="button-drawer" onClick={showDrawer}>
-              <a>{<MenuOutlined />}</a>
             </Menu.Item>
           </Menu>
         </Header>
