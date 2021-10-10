@@ -1,0 +1,169 @@
+@media screen and (max-width: 1288px){
+    .logo {
+  
+        margin-right: 20% !important;
+        margin-left: 9% !important;
+      
+      }
+     
+     
+}
+@media screen and (max-width: 1052px){
+  .logo {
+
+      margin-right: 20% !important;
+      margin-left: 4% !important;
+    
+    }
+    .margin-linkedin {
+      margin-left: 20% !important;
+    }
+   
+   
+}
+@media screen and (max-width: 858px){
+  .logo {
+
+    margin-right: 15% !important;
+    margin-left: 4% !important;
+  
+  }
+    .margin-linkedin {
+      margin-left: 15% !important;
+    }
+    .avatar{
+      width: 40%;
+        padding-top: 220px;
+        margin-left: 40%;
+    }
+    .main-title {
+      margin-top: 200px;
+      font-size: 2.8rem !important;
+      color: rgb(246, 246, 246) !important;
+      opacity: 0.98 !important;
+      font-weight: 400;
+      line-height: 60px;
+      
+    
+    }
+   
+   
+}
+@media screen and (max-width: 766px){
+  .avatar {
+    display: none !important;
+  }
+  .job {
+    display: none !important;
+  }
+ 
+ 
+}
+@media screen and (max-width: 724px){
+    .margin-linkedin {
+      margin-left: 10% !important;
+    }
+   
+   
+}
+@media screen and (max-width: 670px){
+  .logo {
+
+    margin-right: 14% !important;
+    margin-left: 4% !important;
+  
+  }
+  .margin-linkedin {
+    margin-left: 5% !important;
+  }
+ 
+ 
+}
+@media screen and (max-width: 616px){
+  .logo {
+
+    margin-right: 10% !important;
+    margin-left: 4% !important;
+  
+  }
+  
+ 
+ 
+}
+@media screen and (max-width: 589px){
+  .button-drawer {
+    display: inherit !important;
+    font-size: 24px !important;
+  }
+  .backtop {
+    display: inherit !important;
+  }
+  .menuitem-drawer {
+    display: none !important;
+  }
+  .margin-linkedin {
+    display: none !important;
+  }
+  .main-icon{
+    display: none !important;
+  }
+  .logo {
+
+    margin-right: 63% !important;
+    margin-left: 4% !important;
+  
+  }
+  .ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+    font-size: 24px !important;
+    }
+    .main-div {
+      margin-left: 25%;
+    }
+ .main-title {
+   text-align: center;
+   margin-top: 150px !important;
+ }
+ .main-paragraph {
+  text-align: center;
+}
+.main-subtitle {
+  text-align: center;
+}
+.main-scroll {
+  text-align: center;
+}
+.div-avatar {
+  display: inherit !important;
+}
+.main-scroll {
+  line-height: 6;
+}
+ 
+}
+@media screen and (max-width: 480px){
+  .logo {
+
+    margin-right: 57% !important;
+    margin-left: 4% !important;
+  
+  }
+  .main-div {
+    margin-left: 17%;
+  }
+  
+ 
+ 
+}
+@media screen and (max-width: 343px){
+  .logo {
+
+    margin-right: 40% !important;
+    margin-left: 4% !important;
+  
+  }
+  .main-div {
+    margin-left: 10%;
+  }
+ 
+ 
+}

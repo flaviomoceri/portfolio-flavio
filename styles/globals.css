@@ -38,7 +38,73 @@ a {
 .footer {
   background-image: url('/sfondo_footer.png')!important;
   height: 190px;
-  width: 70%;
+  width: 55%;
+}
+.logo {
+  
+  margin-right: 20% !important;
+  margin-left: 14% !important;
+
+}
+.backtop {
+  display: none !important;
+}
+
+.ant-drawer-content-wrapper{
+  height: 100% !important;
+}
+.button-drawer {
+  display: none !important;
+}
+.menuitem-drawer {
+  display: inherit !important;
+}
+.icon-drawer {
+  text-align: center;
+    margin-top: 30%;
+    font-size: 24px;
+    color: grey;
+}
+.contact-drawer-button {
+  background-color: rgb(2, 215, 131) !important;
+    border-color: rgb(2, 215, 131) !important;
+    color: rgb(253, 255, 255) !important;
+    border-radius: 10px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block !important;
+    margin-top: 10% !important;
+    width: 34% !important;
+    height: 8% !important;
+}
+.ant-drawer-close {
+  position: absolute;
+  --scroll-bar: 0px !important;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: block;
+  padding: 50px !important;
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: 700;
+  font-size: 27px !important;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  text-rendering: auto;
+}
+
+.margin-linkedin {
+  margin-left: 25% !important;
+  display: inherit;
 }
 .ant-layout-footer {
   padding: 90px 130px !important;
@@ -94,7 +160,7 @@ textarea.ant-input {
   color: rgb(246, 246, 246) !important;
   opacity: 0.98 !important;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 60px;
   
 
 }
@@ -121,6 +187,7 @@ textarea.ant-input {
     margin-top: 10px !important;
     border-radius: 20px !important;
 }
+
 .ant-timeline-item-head-blue {
   color: #02d783 !important;
   border-color: #02d783 !important;
@@ -180,18 +247,37 @@ animation-iteration-count: infinite;
   opacity: 1;
 }
 .avatar{
-  width: 40%;
-    padding-top: 170px;
-    margin-left: 40%;
+  width: 35%;
+    padding-top: 200px;
+    margin-left: 35%;
+}
+.div-avatar {
+  display: none !important;
+}
+.main-avatar{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .job {
-  margin-left: 32%;
+  margin-left: 25%;
     margin-top: 2px;
     font-size: 29px;
     font-weight: 100;
     font-style: oblique;
     font-family: fantasy;
     word-spacing: 12px;
+    
+}
+.main-job {
+  margin-top: 2px;
+  font-size: 29px;
+  font-weight: 100;
+  font-style: oblique;
+  font-family: fantasy;
+  word-spacing: 12px;
+  text-align: center !important;
 }
 .ant-carousel .slick-dots li button {
   display: block;
@@ -453,7 +539,7 @@ ul.ant-menu.ant-menu-dark.menu.ant-menu-root.ant-menu-horizontal {
   content: '';
 }
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: #9AFCD5 !important;
+  background-color: transparent !important;
 
 }
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {

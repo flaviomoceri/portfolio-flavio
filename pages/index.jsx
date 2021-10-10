@@ -4,15 +4,16 @@ import { Layout, Menu } from "antd";
 import { Row, Col } from "antd";
 import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 import { Card } from "antd";
-import { Button, Popover } from "antd";
+import { Button, Popover, Drawer } from "antd";
 import { Modal, Space } from "antd";
 import { Result, message } from "antd";
 import { Form, Input, Select } from "antd";
 import { Carousel } from "antd";
 import { Timeline } from "antd";
 import { Divider } from "antd";
+import { BackTop } from "antd";
 import {
   InstagramOutlined,
   LinkedinOutlined,
@@ -24,7 +25,9 @@ import {
   BookOutlined,
   MailOutlined,
   ChromeOutlined,
+  MenuOutlined,
 } from "@ant-design/icons";
+import MenuItem from "antd/lib/menu/MenuItem";
 
 const contentStyle = {
   height: "370px",
@@ -37,10 +40,6 @@ const { Meta } = Card;
 const { TextArea } = Input;
 
 const { Header, Content, Footer } = Layout;
-
-
-
-
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mknkebvb");
@@ -109,7 +108,6 @@ function ContactForm() {
         >
           Submit
         </button>
-       
       </div>
     </form>
   );
@@ -117,6 +115,8 @@ function ContactForm() {
 
 const Home = () => {
   const [navbar, setNavbar] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -131,20 +131,71 @@ const Home = () => {
     return () => window.removeEventListener("scroll", changeBackground);
   });
 
-  const MyComponent = () => {
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`);
+  };
 
-    const handleType = (count) => {
-      // access word count number
-      console.log(count)}
-    }
-  
-    const handleDone = () => {
-      console.log(`Done after 5 loops!`)
-    }
-  
+  const showDrawer = () => {
+    setVisible(true);
+  };
+  const onClose = () => {
+    setVisible(false);
+  };
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
 
   return (
     <Layout id="home">
+      <Drawer placement="top" onClose={onClose} visible={visible}>
+        <Menu
+          theme="light"
+          mode="vertical"
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto",
+            display: "table",
+            fontSize: 24,
+            color: "grey",
+            fontWeight: 400,
+            marginTop: "30%",
+          }}
+        >
+          <MenuItem>About</MenuItem>
+          <MenuItem>Project</MenuItem>
+          <MenuItem>Skills</MenuItem>
+        </Menu>
+        <Button
+          onClick={showModal}
+          className="contact-drawer-button"
+          icon={<MailOutlined />}
+          rel="noreferrer"
+        >
+          Contact
+        </Button>
+        <div className="icon-drawer">
+          <LinkedinOutlined style={{ marginRight: 40 }} />
+          <GithubOutlined />
+          <InstagramOutlined style={{ marginLeft: 40 }} />
+        </div>
+      </Drawer>
+      <Modal
+        title="Fill in the fields"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <ContactForm />
+      </Modal>
       <Head>
         <title>Flavio Moceri&apos;s Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -155,6 +206,24 @@ const Home = () => {
         <link rel="stylesheet" href="animate.min.css" />
       </Head>
       <body>
+        <BackTop>
+          <div className="backtop">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+              style={{
+                fontSize: 30,
+                backgroundColor: "black",
+                color: "#02d783",
+                padding: 5,
+                borderRadius: 5,
+              }}
+            >
+              {<LinkedinOutlined />}
+            </a>
+          </div>
+        </BackTop>
         <Header style={{ position: "fixed", zIndex: 3, width: "100%" }}>
           <Menu
             theme="light"
@@ -162,32 +231,21 @@ const Home = () => {
             mode="horizontal"
             defaultSelectedKeys={["1"]}
           >
-            <Menu.Item
-              style={{
-                marginRight: "300px",
-                marginLeft: "220px",
-                fontSize: "30px",
-                fontFamily: "horizon",
-              }}
-            >
+            <Menu.Item key="1" className="logo">
               <a href="#home">
                 <img src="logo_piccolo.png" />
               </a>
             </Menu.Item>
-            <Menu.Item key="1">
-              <a href="#home">About</a>
+            <Menu.Item key="2" className="menuitem-drawer">
+              <a href="#about">About</a>
             </Menu.Item>
-            <Menu.Item key="2">
-              <a href="#calendario">Projects</a>
+            <Menu.Item key="3" className="menuitem-drawer">
+              <a href="#skill">Skills</a>
             </Menu.Item>
-            <Menu.Item key="3">
-              <a href="#grafici">Contacts</a>
+            <Menu.Item key="4" className="menuitem-drawer">
+              <a href="#contact">Contacts</a>
             </Menu.Item>
-            <Menu.Item
-              style={{
-                marginLeft: "25%",
-              }}
-            >
+            <Menu.Item className="margin-linkedin">
               <a
                 href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
                 target="_blank"
@@ -207,114 +265,130 @@ const Home = () => {
                 </Button>
               </a>
             </Menu.Item>
+            <Menu.Item key="7" className="button-drawer" onClick={showDrawer}>
+              <a>{<MenuOutlined />}</a>
+            </Menu.Item>
           </Menu>
         </Header>
         <main className="background-image2">
           <Row>
-            <Col className="main-icon" span={6}>
+            <Col className="main-icon" span={3}>
               <div className="main-icon">
                 <LinkedinOutlined />
                 <GithubOutlined style={{ marginTop: 30 }} />
                 <InstagramOutlined style={{ marginTop: 30 }} />
               </div>
             </Col>
-            <Col span={7}>
-              <div>
+            <Col span={20} md={9}>
+              <div className="main-div">
                 <h1 className="main-title">Hi, I&apos;m Flavio</h1>
                 <h6 className="main-subtitle">Web Developer</h6>
                 <p className="main-paragraph">
                   I design and code beautifully simple things, and I love what I
                   do.
                 </p>
-                <div className="main-scroll">
-                  <h3
-                    className="animated bounce"
-                    style={{ fontSize: 24, color: "#F6F6F6" }}
-                  >
-                    Scroll down⠀
-                    <img style={{ width: 20 }} src="scroll-down.svg" />
-                  </h3>
+                <div className="div-avatar">
+                  <img className="main-avatar" src="myAvatar.svg" />
+                  <h1 className="main-job">FRONTEND DEVELOPER</h1>
                 </div>
+                <a href="#skill">
+                  <div className="main-scroll">
+                    <h3
+                      className="animated bounce"
+                      style={{ fontSize: 24, color: "#F6F6F6" }}
+                    >
+                      Scroll down⠀
+                      <img style={{ width: 20 }} src="scroll-down.svg" />
+                    </h3>
+                  </div>
+                </a>
               </div>
             </Col>
-            <Col span={10}>
+            <Col span={11}>
               <img className="avatar" src="myAvatar.svg" />
-              <h1 className={"job"}>FRONTEND DEVELOPER</h1>
+              <h1 className="job">FRONTEND DEVELOPER</h1>
             </Col>
           </Row>
+          <p id="skill"></p>
         </main>
         <Content>
-          <h1 className="title-paragraph">Skills</h1>
-          <Carousel style={{ marginTop: 50 }} autoplay loop>
-            <div>
-              <Row style={contentStyle}>
-                <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
-                  <Card
-                    hoverable
-                    className="boxshadow_card"
-                    style={{ width: 280, borderRadius: 40 }}
-                    cover={<img alt="react" src="react.png" />}
-                  >
-                    <Meta title="ReactJS" description="Skill - Intermediate" />
-                  </Card>
-                </Col>
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
-                  <Card
-                    hoverable
-                    className="boxshadow_card"
-                    style={{ width: 280, borderRadius: 40 }}
-                    cover={<img alt="html" src="html1.png" />}
-                  >
-                    <Meta title="Html" description="Skill - Advanced" />
-                  </Card>
-                </Col>
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
-                  <Card
-                    hoverable
-                    className="boxshadow_card"
-                    style={{ width: 280, borderRadius: 40 }}
-                    cover={<img alt="css" src="css1.png" />}
-                  >
-                    <Meta title="CSS" description="Skill - Advanced" />
-                  </Card>
-                </Col>
-              </Row>
-            </div>
-            <div>
-              <Row style={contentStyle}>
-                <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
-                  <Card
-                    hoverable
-                    className="boxshadow_card"
-                    style={{ width: 280, borderRadius: 40 }}
-                    cover={<img alt="python" src="python1.png" />}
-                  >
-                    <Meta title="Python" description="Skill - Intermediate" />
-                  </Card>
-                </Col>
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
-                  <Card
-                    hoverable
-                    className="boxshadow_card"
-                    style={{ width: 280, borderRadius: 40 }}
-                    cover={<img alt="json" src="json1.png" />}
-                  >
-                    <Meta title="Json" description="Skill - Base" />
-                  </Card>
-                </Col>
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
-                  <Card
-                    hoverable
-                    className="boxshadow_card"
-                    style={{ width: 280, borderRadius: 40 }}
-                    cover={<img alt="mongo" src="mongo1.png" />}
-                  >
-                    <Meta title="MongoDB" description="Skill - Base" />
-                  </Card>
-                </Col>
-              </Row>
-            </div>
-          </Carousel>
+          <div>
+            <h1 className="title-paragraph">Skills</h1>
+            <Carousel style={{ marginTop: 50 }} autoplay loop>
+              <div>
+                <Row style={contentStyle}>
+                  <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
+                    <Card
+                      hoverable
+                      className="boxshadow_card"
+                      style={{ width: 280, borderRadius: 40 }}
+                      cover={<img alt="react" src="react.png" />}
+                    >
+                      <Meta
+                        title="ReactJS"
+                        description="Skill - Intermediate"
+                      />
+                    </Card>
+                  </Col>
+                  <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                    <Card
+                      hoverable
+                      className="boxshadow_card"
+                      style={{ width: 280, borderRadius: 40 }}
+                      cover={<img alt="html" src="html1.png" />}
+                    >
+                      <Meta title="Html" description="Skill - Advanced" />
+                    </Card>
+                  </Col>
+                  <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                    <Card
+                      hoverable
+                      className="boxshadow_card"
+                      style={{ width: 280, borderRadius: 40 }}
+                      cover={<img alt="css" src="css1.png" />}
+                    >
+                      <Meta title="CSS" description="Skill - Advanced" />
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <div>
+                <Row style={contentStyle}>
+                  <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
+                    <Card
+                      hoverable
+                      className="boxshadow_card"
+                      style={{ width: 280, borderRadius: 40 }}
+                      cover={<img alt="python" src="python1.png" />}
+                    >
+                      <Meta title="Python" description="Skill - Intermediate" />
+                    </Card>
+                  </Col>
+                  <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                    <Card
+                      hoverable
+                      className="boxshadow_card"
+                      style={{ width: 280, borderRadius: 40 }}
+                      cover={<img alt="json" src="json1.png" />}
+                    >
+                      <Meta title="Json" description="Skill - Base" />
+                    </Card>
+                  </Col>
+                  <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                    <Card
+                      hoverable
+                      className="boxshadow_card"
+                      style={{ width: 280, borderRadius: 40 }}
+                      cover={<img alt="mongo" src="mongo1.png" />}
+                    >
+                      <Meta title="MongoDB" description="Skill - Base" />
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+            </Carousel>
+          </div>
+          <p id="about"></p>
           <div style={{ backgroundColor: "#f5f5f5" }}>
             <Divider />
             <div>
@@ -422,23 +496,33 @@ const Home = () => {
             </Timeline.Item>
           </Timeline>
           <div>
-            <h1 className='text-machine'>
-            Among the knowledge acquired over the years, 
-            I tried to learn the most important technologies that<br/> 
-            could allow me to develop the best possible knowledge, 
-            such as <span style={{color: "#02d783"}}><Typewriter
-            words={['ReactJS', 'Html', 'CSS', 'Python', 'Json', 'MongoDB']}
-            loop
-            cursor
-            cursorStyle='|'
-            typeSpeed={120}
-            deleteSpeed={50}
-            delaySpeed={3000}
-            onLoopDone={handleDone}
-          /></span>
+            <h1 className="text-machine">
+              Among the knowledge acquired over the years, I tried to learn the
+              most important technologies that
+              <br />
+              could allow me to develop the best possible knowledge, such as{" "}
+              <span style={{ color: "#02d783" }}>
+                <Typewriter
+                  words={[
+                    "ReactJS",
+                    "Html",
+                    "CSS",
+                    "Python",
+                    "Json",
+                    "MongoDB",
+                  ]}
+                  loop
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={120}
+                  deleteSpeed={50}
+                  delaySpeed={3000}
+                  onLoopDone={handleDone}
+                />
+              </span>
             </h1>
-            </div>
-          <div style={{ marginTop: 50, marginBottom: 70 }}>
+          </div>
+          <div style={{ marginTop: 50, marginBottom: 70 }} id="contact">
             <div>
               <div>
                 <Card className="form">
