@@ -30,9 +30,9 @@ import {
 import MenuItem from "antd/lib/menu/MenuItem";
 
 const contentStyle = {
-  height: "370px",
+  height: "400px",
   color: "#fff",
-  lineHeight: "160px",
+  lineHeight: "260px",
   textAlign: "center",
 };
 
@@ -170,9 +170,29 @@ const Home = () => {
             marginTop: "30%",
           }}
         >
-          <MenuItem ><a onClick={onClose}  href="#about"><p style={{color: 'grey'}}>About</p></a></MenuItem>
-          <MenuItem ><a onClick={onClose} style={{color: 'grey !important'}} href="#skill"><p style={{color: 'grey'}}>Skills</p></a></MenuItem>
-          <MenuItem ><a onClick={onClose} style={{color: 'grey !important'}} href="#contact"><p style={{color: 'grey'}}>Contact</p></a></MenuItem>
+          <MenuItem>
+            <a onClick={onClose} href="#about">
+              <p style={{ color: "grey" }}>About</p>
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              onClick={onClose}
+              style={{ color: "grey !important" }}
+              href="#skill"
+            >
+              <p style={{ color: "grey" }}>Skills</p>
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              onClick={onClose}
+              style={{ color: "grey !important" }}
+              href="#contact"
+            >
+              <p style={{ color: "grey" }}>Contact</p>
+            </a>
+          </MenuItem>
         </Menu>
         <Button
           onClick={showModal}
@@ -236,9 +256,6 @@ const Home = () => {
                 <img src="logo_piccolo.png" />
               </a>
             </Menu.Item>
-            <Menu.Item className="button-drawer" onClick={showDrawer}>
-              <a><MenuOutlined /></a>
-            </Menu.Item>
             <Menu.Item key="2" className="menuitem-drawer">
               <a href="#about">About</a>
             </Menu.Item>
@@ -268,6 +285,11 @@ const Home = () => {
                 </Button>
               </a>
             </Menu.Item>
+            <div className="button-menu">
+              <a className="color-menu" onClick={showDrawer}>
+                <MenuOutlined />
+              </a>
+            </div>
           </Menu>
         </Header>
         <main className="background-image2">
@@ -314,14 +336,13 @@ const Home = () => {
         <Content>
           <div>
             <h1 className="title-paragraph">Skills</h1>
-            <Carousel style={{ marginTop: 50 }} autoplay loop>
+            <Carousel className="carousel" autoplay loop>
               <div>
                 <Row style={contentStyle}>
                   <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
                     <Card
                       hoverable
                       className="boxshadow_card"
-                      style={{ width: 280, borderRadius: 40 }}
                       cover={<img alt="react" src="react.png" />}
                     >
                       <Meta
@@ -334,7 +355,6 @@ const Home = () => {
                     <Card
                       hoverable
                       className="boxshadow_card"
-                      style={{ width: 280, borderRadius: 40 }}
                       cover={<img alt="html" src="html1.png" />}
                     >
                       <Meta title="Html" description="Skill - Advanced" />
@@ -344,7 +364,6 @@ const Home = () => {
                     <Card
                       hoverable
                       className="boxshadow_card"
-                      style={{ width: 280, borderRadius: 40 }}
                       cover={<img alt="css" src="css1.png" />}
                     >
                       <Meta title="CSS" description="Skill - Advanced" />
@@ -358,7 +377,6 @@ const Home = () => {
                     <Card
                       hoverable
                       className="boxshadow_card"
-                      style={{ width: 280, borderRadius: 40 }}
                       cover={<img alt="python" src="python1.png" />}
                     >
                       <Meta title="Python" description="Skill - Intermediate" />
@@ -368,7 +386,6 @@ const Home = () => {
                     <Card
                       hoverable
                       className="boxshadow_card"
-                      style={{ width: 280, borderRadius: 40 }}
                       cover={<img alt="json" src="json1.png" />}
                     >
                       <Meta title="Json" description="Skill - Base" />
@@ -378,13 +395,72 @@ const Home = () => {
                     <Card
                       hoverable
                       className="boxshadow_card"
-                      style={{ width: 280, borderRadius: 40 }}
                       cover={<img alt="mongo" src="mongo1.png" />}
                     >
                       <Meta title="MongoDB" description="Skill - Base" />
                     </Card>
                   </Col>
                 </Row>
+              </div>
+            </Carousel>
+            {/* Carousel on Mobile */}
+            <Carousel className="carousel-mobile" autoplay loop>
+              <div>
+                <Card
+                  hoverable
+                  className="boxshadow-card-mobile"
+                  cover={<img alt="react" src="react.png" />}
+                >
+                  <Meta title="ReactJS" description="Skill - Intermediate" />
+                </Card>
+              </div>
+              <div>
+                <Card
+                  hoverable
+                  className="boxshadow-card-mobile"
+                  cover={<img alt="html" src="html1.png" />}
+                >
+                  <Meta title="Html" description="Skill - Advanced" />
+                </Card>
+              </div>
+              <div>
+                {" "}
+                <Card
+                  hoverable
+                  className="boxshadow-card-mobile"
+                  cover={<img alt="css" src="css1.png" />}
+                >
+                  <Meta title="CSS" description="Skill - Advanced" />
+                </Card>
+              </div>
+              <div>
+                <Card
+                  hoverable
+                  className="boxshadow-card-mobile"
+                  cover={<img alt="python" src="python1.png" />}
+                >
+                  <Meta title="Python" description="Skill - Intermediate" />
+                </Card>
+              </div>
+              <div>
+                <Card
+                  hoverable
+                  className="boxshadow-card-mobile"
+                  cover={<img alt="json" src="json1.png" />}
+                >
+                  <Meta title="Json" description="Skill - Base" />
+                </Card>
+              </div>
+              <div>
+                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                  <Card
+                    hoverable
+                    className="boxshadow-card-mobile"
+                    cover={<img alt="mongo" src="mongo1.png" />}
+                  >
+                    <Meta title="MongoDB" description="Skill - Base" />
+                  </Card>
+                </Col>
               </div>
             </Carousel>
           </div>
@@ -432,7 +508,75 @@ const Home = () => {
             </div>
             <Divider />
           </div>
-          <Timeline mode="alternate" style={{ width: "99%", marginTop: 100 }}>
+          <Timeline mode="alternate" className="timeline">
+            <Timeline.Item>
+              <h1 className="title_timeline">
+                The beginning is always the hardest part.
+              </h1>
+              <img className="image_timeline" src="start.png" />
+              <p style={{ marginRight: 20, marginLeft: 20 }}>
+                I owe everything to my brother, he passed on his passion to me.
+                I thought several times about leaving for friends or other, but
+                I always continued, I feel that if you really believe it, sooner
+                or later it happens and over time realized that the thinking of
+                others is not so important.
+              </p>
+            </Timeline.Item>
+            <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
+              <h1 className="title_timeline">Codecademy and Myself</h1>
+              <img className="image_timeline" src="codecademy.png" />
+              <p style={{ marginRight: 20, marginLeft: 70 }}>
+                Through Codecademy and myself, I was able to acquire the
+                knowledge, thanks to the internet now anyone can learn
+                everything they want, there are no more excuses, it all depends
+                on their own determination,
+              </p>
+            </Timeline.Item>
+            <Timeline.Item
+              dot={<ShoppingCartOutlined style={{ fontSize: "16px" }} />}
+            >
+              <h1 className="title_timeline">The E-Commerce World</h1>
+              <img className="image_timeline" src="e-commerce.png" />
+              <p style={{ marginRight: 20, marginLeft: 20 }}>
+                In the winter of 2019 with the pandemic, many shops needed a
+                site to continue working, scared by the situation, so I started
+                making them, gaining a lot of experience.
+              </p>
+            </Timeline.Item>
+            <Timeline.Item dot={<BookOutlined style={{ fontSize: "16px" }} />}>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.ricerca-libri.it/"
+              >
+                <h1 className="title_timeline">Ricerca-Libri.it</h1>
+              </a>
+              <img className="image_timeline" src="ricerca.png" />
+              <p style={{ marginRight: 20, marginLeft: 70 }}>
+                I create this site to learn and for fun, you can know the books
+                to acquire to start the school year. Through WebScraping I can
+                get the information by creating a bot from Libraccio.it and
+                printing it on my site.
+              </p>
+            </Timeline.Item>
+            <Timeline.Item>
+              <h1 className="title_timeline">For the future</h1>
+              <img className="image_timeline" src="future.png" />
+              <p style={{ marginRight: 20, marginLeft: 20 }}>
+                This year I will finish high school. For the future, my choice
+                is to do a three-year degree at LUISS, such as: Management and
+                Computer Science or Economics and Management, or to enroll at
+                the 42 Rome LUISS school, because I really consider it
+                revolutionary and I am very attracted to it.
+              </p>
+            </Timeline.Item>
+          </Timeline>
+          {/* Timeline on Mobile */}
+          <Timeline
+            mode="left"
+            className="timeline-mobile"
+            style={{ width: "99%", marginTop: 100 }}
+          >
             <Timeline.Item>
               <h1 className="title_timeline">
                 The beginning is always the hardest part.
