@@ -200,7 +200,7 @@ const Home = () => {
           icon={<MailOutlined />}
           rel="noreferrer"
         >
-          Contact
+          Send mail
         </Button>
         <div className="icon-drawer">
           <LinkedinOutlined style={{ marginRight: 40 }} />
@@ -452,7 +452,7 @@ const Home = () => {
                 </Card>
               </div>
               <div>
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                
                   <Card
                     hoverable
                     className="boxshadow-card-mobile"
@@ -460,7 +460,7 @@ const Home = () => {
                   >
                     <Meta title="MongoDB" description="Skill - Base" />
                   </Card>
-                </Col>
+                
               </div>
             </Carousel>
           </div>
@@ -575,14 +575,14 @@ const Home = () => {
           <Timeline
             mode="left"
             className="timeline-mobile"
-            style={{ width: "99%", marginTop: 100 }}
+            
           >
             <Timeline.Item>
               <h1 className="title_timeline">
                 The beginning is always the hardest part.
               </h1>
               <img className="image_timeline" src="start.png" />
-              <p style={{ marginRight: 20, marginLeft: 20 }}>
+              <p >
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -593,7 +593,7 @@ const Home = () => {
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
               <h1 className="title_timeline">Codecademy and Myself</h1>
               <img className="image_timeline" src="codecademy.png" />
-              <p style={{ marginRight: 20, marginLeft: 70 }}>
+              <p>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -605,7 +605,7 @@ const Home = () => {
             >
               <h1 className="title_timeline">The E-Commerce World</h1>
               <img className="image_timeline" src="e-commerce.png" />
-              <p style={{ marginRight: 20, marginLeft: 20 }}>
+              <p >
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -620,7 +620,7 @@ const Home = () => {
                 <h1 className="title_timeline">Ricerca-Libri.it</h1>
               </a>
               <img className="image_timeline" src="ricerca.png" />
-              <p style={{ marginRight: 20, marginLeft: 70 }}>
+              <p >
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -630,7 +630,7 @@ const Home = () => {
             <Timeline.Item>
               <h1 className="title_timeline">For the future</h1>
               <img className="image_timeline" src="future.png" />
-              <p style={{ marginRight: 20, marginLeft: 20 }}>
+              <p >
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -665,16 +665,17 @@ const Home = () => {
                 />
               </span>
             </h1>
+            <div><p id="contact"></p></div>
           </div>
-          <div style={{ marginTop: 50, marginBottom: 70 }} id="contact">
+          <div className="contact-pc">
             <div>
-              <div>
-                <Card className="form">
+            <Card className="form">
                   <ContactForm />
                 </Card>
-              </div>
               <div className="paragraph-contact">
                 <h7>How to contact me</h7>
+              </div>
+              <div>
               </div>
               {
                 <LineOutlined
@@ -742,12 +743,16 @@ const Home = () => {
                   </p>
                 </div>
               </a>
+              <Card className="form-mobile">
+                  <ContactForm />
+                </Card>
             </div>
           </div>
         </Content>
       </body>
       <Footer className="footer">
-        <h7>
+        <div>
+        <h15>
           Coded with 💚 by{" "}
           <a
             className="text_footer"
@@ -757,7 +762,8 @@ const Home = () => {
           >
             @flaviomoceri
           </a>
-        </h7>
+        </h15>
+        </div>
       </Footer>
     </Layout>
   );

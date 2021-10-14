@@ -60,6 +60,10 @@
     width: 180px !important;
      
   }
+  .form {
+    width: 46%;
+      
+  }
   
     .margin-linkedin {
       margin-left: 15% !important;
@@ -90,6 +94,10 @@
   .job {
     display: none !important;
   }
+  .form {
+    width: 42%;
+      
+  }
   .boxshadow_card{
         
     width: 170px !important;
@@ -110,7 +118,15 @@
     .about-image {
       display: none !important;
     }
-   
+    .form {
+      width: 40%;
+        
+    }
+    .footer {
+      background-image: url('/sfondo_footer2.png')!important;
+      height: 190px;
+      width: 100%;
+    }
    
 }
 @media screen and (max-width: 670px){
@@ -119,6 +135,17 @@
     margin-right: 14% !important;
     margin-left: 4% !important;
   
+  }
+  .form {
+    display: none !important;
+      
+  }
+  .form-mobile {
+    display: inherit !important;
+    width: 75%;
+    margin-top: 10px !important;
+    border-radius: 20px !important;
+    margin-left: 15%;
   }
   .margin-linkedin {
     margin-left: 5% !important;
@@ -184,6 +211,18 @@
 }
 .main-scroll {
   line-height: 6;
+}
+.form-mobile {
+  display: inherit !important;
+  width: 75%;
+  margin-top: 10px !important;
+  border-radius: 20px !important;
+  
+}
+.ant-layout-footer {
+  padding: 75px 65px !important;
+  
+  
 }
  
 }
