@@ -154,8 +154,15 @@ const Home = () => {
     setIsModalVisible(false);
   };
 
+  const onBuffer = (data) => {
+    console.log("on buffet==>>", data);
+  };
+  const videoError = (data) => {
+    console.log("video error==>>", data);
+  };
   return (
     <Layout id="home">
+      <div className="risoluzione">Risoluzione schermo non disponibile</div>
       <Drawer placement="top" onClose={onClose} visible={visible}>
         <Menu
           theme="light"
@@ -335,8 +342,8 @@ const Home = () => {
         </main>
         <Content>
           <div>
-            <h1 className="title-paragraph">Skills</h1>
-            <Carousel className="carousel" autoplay loop>
+            <h1 className={"title-paragraph"}>Skills</h1>
+            <Carousel className={"carousel"} autoplay loop>
               <div>
                 <Row style={contentStyle}>
                   <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
@@ -452,15 +459,13 @@ const Home = () => {
                 </Card>
               </div>
               <div>
-                
-                  <Card
-                    hoverable
-                    className="boxshadow-card-mobile"
-                    cover={<img alt="mongo" src="mongo1.png" />}
-                  >
-                    <Meta title="MongoDB" description="Skill - Base" />
-                  </Card>
-                
+                <Card
+                  hoverable
+                  className="boxshadow-card-mobile"
+                  cover={<img alt="mongo" src="mongo1.png" />}
+                >
+                  <Meta title="MongoDB" description="Skill - Base" />
+                </Card>
               </div>
             </Carousel>
           </div>
@@ -480,15 +485,9 @@ const Home = () => {
                 </h7>
               </div>
               {
-                <LineOutlined
-                  style={{
-                    width: "33%",
-                    fontSize: "35px",
-                    color: "#02d783",
-                    marginBottom: 20,
-                    marginTop: 20,
-                  }}
-                />
+                <div className="lineoutlined">
+                  <LineOutlined />
+                </div>
               }
               <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
                 <Row>
@@ -514,7 +513,7 @@ const Home = () => {
                 The beginning is always the hardest part.
               </h1>
               <img className="image_timeline" src="start.png" />
-              <p style={{ marginRight: 20, marginLeft: 20 }}>
+              <p style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -525,7 +524,7 @@ const Home = () => {
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
               <h1 className="title_timeline">Codecademy and Myself</h1>
               <img className="image_timeline" src="codecademy.png" />
-              <p style={{ marginRight: 20, marginLeft: 70 }}>
+              <p style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -537,7 +536,7 @@ const Home = () => {
             >
               <h1 className="title_timeline">The E-Commerce World</h1>
               <img className="image_timeline" src="e-commerce.png" />
-              <p style={{ marginRight: 20, marginLeft: 20 }}>
+              <p style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -552,7 +551,7 @@ const Home = () => {
                 <h1 className="title_timeline">Ricerca-Libri.it</h1>
               </a>
               <img className="image_timeline" src="ricerca.png" />
-              <p style={{ marginRight: 20, marginLeft: 70 }}>
+              <p style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -562,7 +561,7 @@ const Home = () => {
             <Timeline.Item>
               <h1 className="title_timeline">For the future</h1>
               <img className="image_timeline" src="future.png" />
-              <p style={{ marginRight: 20, marginLeft: 20 }}>
+              <p style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -572,17 +571,13 @@ const Home = () => {
             </Timeline.Item>
           </Timeline>
           {/* Timeline on Mobile */}
-          <Timeline
-            mode="left"
-            className="timeline-mobile"
-            
-          >
+          <Timeline mode="left" className="timeline-mobile">
             <Timeline.Item>
               <h1 className="title_timeline">
                 The beginning is always the hardest part.
               </h1>
               <img className="image_timeline" src="start.png" />
-              <p >
+              <p style={{ color: "grey" }}>
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -593,7 +588,7 @@ const Home = () => {
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
               <h1 className="title_timeline">Codecademy and Myself</h1>
               <img className="image_timeline" src="codecademy.png" />
-              <p>
+              <p style={{ color: "grey" }}>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -605,7 +600,7 @@ const Home = () => {
             >
               <h1 className="title_timeline">The E-Commerce World</h1>
               <img className="image_timeline" src="e-commerce.png" />
-              <p >
+              <p style={{ color: "grey" }}>
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -620,7 +615,7 @@ const Home = () => {
                 <h1 className="title_timeline">Ricerca-Libri.it</h1>
               </a>
               <img className="image_timeline" src="ricerca.png" />
-              <p >
+              <p style={{ color: "grey" }}>
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -630,7 +625,7 @@ const Home = () => {
             <Timeline.Item>
               <h1 className="title_timeline">For the future</h1>
               <img className="image_timeline" src="future.png" />
-              <p >
+              <p style={{ color: "grey" }}>
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -665,27 +660,23 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <div><p id="contact"></p></div>
+            <div>
+              <p id="contact"></p>
+            </div>
           </div>
           <div className="contact-pc">
             <div>
-            <Card className="form">
-                  <ContactForm />
-                </Card>
+              <Card className="form">
+                <ContactForm />
+              </Card>
               <div className="paragraph-contact">
                 <h7>How to contact me</h7>
               </div>
-              <div>
-              </div>
+              <div></div>
               {
-                <LineOutlined
-                  style={{
-                    width: "33%",
-                    fontSize: "35px",
-                    color: "#02d783",
-                    marginBottom: 20,
-                  }}
-                />
+                <div className="lineoutlined">
+                  <LineOutlined />
+                </div>
               }
               <a href="tel:+393883289985" rel="noreferrer" target="_blank">
                 <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
@@ -744,25 +735,25 @@ const Home = () => {
                 </div>
               </a>
               <Card className="form-mobile">
-                  <ContactForm />
-                </Card>
+                <ContactForm />
+              </Card>
             </div>
           </div>
         </Content>
       </body>
       <Footer className="footer">
         <div>
-        <h15>
-          Coded with 💚 by{" "}
-          <a
-            className="text_footer"
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
-          >
-            @flaviomoceri
-          </a>
-        </h15>
+          <h15>
+            Coded with 💚 by{" "}
+            <a
+              className="text_footer"
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+            >
+              @flaviomoceri
+            </a>
+          </h15>
         </div>
       </Footer>
     </Layout>

@@ -191,7 +191,7 @@
     font-size: 24px !important;
     }
     .main-div {
-      margin-left: 18%;
+      margin-left: 22%;
     }
  .main-title {
    text-align: center;
@@ -220,7 +220,7 @@
   
 }
 .ant-layout-footer {
-  padding: 75px 65px !important;
+  padding: 75px 19px !important;
   
   
 }
@@ -243,6 +243,21 @@
  
  
 }
+@media screen and (max-width: 396px){
+  .main-job {
+    
+    font-size: 22px;
+  }
+  .main-title {
+ 
+    font-size: 2.4rem !important;
+    
+    
+  
+  }
+ 
+ 
+}
 @media screen and (max-width: 376px){
   .logo {
 
@@ -252,11 +267,11 @@
   }
   .main-job {
     
-    font-size: 22px;
+    font-size: 20px;
   }
   .main-title {
  
-    font-size: 2.4rem !important;
+    font-size: 2.1rem !important;
     
     
   
@@ -269,6 +284,39 @@
     font-weight: 300;
 
 }
+.contact-drawer-button {
+    
+  width: 50% !important;
+  
+}
+.anticon anticon-line{
+  width: 70% !important;
+}
  
+}
+
  
+
+@media screen and (max-width: 251px){
+  
+.ant-layout-footer{
+    display: none !important;
+  }
+  .ant-layout-content{
+    display: none !important;
+  }
+  .ant-layout-header {
+    display: none !important;
+}
+.background-image2 {
+  display: none !important;
+}
+.risoluzione {
+  display: inherit !important;
+    
+    text-align: center;
+    margin-top: 100%;
+    padding: 20px;
+    font-size: 20px !important;
+}
 }
