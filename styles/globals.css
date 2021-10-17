@@ -24,14 +24,14 @@ a {
   background-color: #02d783 !important;
 }
 .background-image {
-  background-image: url('/sfondo.png')!important;
+  background-image: url('/sfondo1.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 96px !important;
   line-height: 96px !important;
 }
 .background-image2 {
-  background-image: url('/sfondo.png')!important;
+  background-image: url('/sfondo1.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 100% !important;
@@ -120,7 +120,7 @@ a {
 }
 .ant-layout-footer {
   padding: 90px 130px !important;
-  color: black !important;
+  color: #11152c !important;
   font-size: 20px !important;
   background-color: white !important;
   
@@ -137,8 +137,11 @@ a {
   background: white !important;
 }
 .text_footer{
-  color: black !important;
+  color: #d2d2d2 !important;
   text-decoration: underline;
+}
+.footer-text {
+  color: #d2d2d2 !important;
 }
 main {
   min-height: 850px;
@@ -463,7 +466,7 @@ h1, h3, h4, h5, h2 {
   padding: 0 0px !important;
   color: rgba(0, 0, 0, 0.85);
   line-height: 65px !important;
-  background: #0a0a0a !important;
+  background: #11152c !important;
 }
 .ant-btn-primary:hover, .ant-btn-primary:focus {
   background: #02d783 !important;
@@ -482,7 +485,7 @@ background: white;
 margin-right: 10px;
 }
 ::-webkit-scrollbar:hover{
-  background-color: black ;
+  background-color: #11152c ;
 border: none;
 }
 ::-webkit-scrollbar-thumb{
@@ -599,7 +602,7 @@ ul.ant-menu.ant-menu-dark.menu.ant-menu-root.ant-menu-horizontal {
   color: #02d783 !important;
 }
 .ant-menu-item-selected {
-  color: black !important;
+  color: #11152c !important;
 }
 i.ant-menu-submenu-arrow {
   color: #02d783 !important;

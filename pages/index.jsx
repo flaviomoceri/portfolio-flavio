@@ -241,7 +241,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
               style={{
                 fontSize: 30,
-                backgroundColor: "black",
+                backgroundColor: "#11152c",
                 color: "#02d783",
                 padding: 5,
                 borderRadius: 5,
@@ -743,7 +743,7 @@ const Home = () => {
       </body>
       <Footer className="footer">
         <div>
-          <h15>
+          <h15 className='footer-text'>
             Coded with 💚 by{" "}
             <a
               className="text_footer"
