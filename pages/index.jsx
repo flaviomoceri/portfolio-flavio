@@ -210,9 +210,21 @@ const Home = () => {
           Send mail
         </Button>
         <div className="icon-drawer">
-          <LinkedinOutlined style={{ marginRight: 40 }} />
-          <GithubOutlined />
-          <InstagramOutlined style={{ marginLeft: 40 }} />
+          <a rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/">
+          <LinkedinOutlined  style={{ marginRight: 40, color: 'rgb(119, 119, 121)' }} />
+              </a>
+              <a rel="noreferrer"
+              target="_blank"
+              href="https://github.com/flaviomoceri">
+          <GithubOutlined  style={{ color: 'rgb(119, 119, 121)' }} />
+              </a>
+              <a rel="noreferrer"
+              target="_blank"
+              href="https://www.instagram.com/flaviomoceri_/">
+          <InstagramOutlined  style={{ marginLeft: 40, color: 'rgb(119, 119, 121)' }} />
+              </a>
         </div>
       </Drawer>
       <Modal
@@ -303,9 +315,21 @@ const Home = () => {
           <Row>
             <Col className="main-icon" span={3}>
               <div className="main-icon">
-                <LinkedinOutlined />
-                <GithubOutlined style={{ marginTop: 30 }} />
-                <InstagramOutlined style={{ marginTop: 30 }} />
+              <a rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/">
+                <LinkedinOutlined style={{ color: 'rgb(119, 119, 121)' }} />
+              </a>
+              <a rel="noreferrer"
+              target="_blank"
+              href="https://github.com/flaviomoceri" >
+                <GithubOutlined style={{ marginTop: 30, color: 'rgb(119, 119, 121)' }} />
+              </a>
+              <a rel="noreferrer"
+              target="_blank"
+              href="https://www.instagram.com/flaviomoceri_/">
+                <InstagramOutlined style={{ marginTop: 30, color: 'rgb(119, 119, 121)' }} />
+              </a>
               </div>
             </Col>
             <Col span={20} md={9}>
@@ -340,6 +364,7 @@ const Home = () => {
           </Row>
           <p id="skill"></p>
         </main>
+        <img className='sfondo-onda' src="sfondoonda.png"/>
         <Content>
           <div>
             <h1 className={"title-paragraph"}>Skills</h1>

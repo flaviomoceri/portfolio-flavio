@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1288px){
     .logo {
   
@@ -123,7 +124,7 @@
         
     }
     .footer {
-      background-image: url('/sfondo_footer2.png')!important;
+      background-image: url('/sfondo_footer.png')!important;
       height: 190px;
       width: 100%;
     }
@@ -168,6 +169,9 @@
   .button-menu {
     display: inherit !important;
     font-size: 24px !important;
+  }
+  main {
+    min-height: 771px;
   }
   .backtop {
     display: inherit !important;
@@ -224,6 +228,7 @@
   
   
 }
+
  
 }
 @media screen and (max-width: 480px){
@@ -233,6 +238,7 @@
     margin-left: 4% !important;
   
   }
+  
   .timeline {
     display: none !important;
   }
@@ -292,11 +298,15 @@
 .anticon anticon-line{
   width: 70% !important;
 }
+
  
 }
 
- 
-
+@media screen and (max-width: 256px){
+main {
+  min-height: 798px;
+}
+}
 @media screen and (max-width: 251px){
   
 .ant-layout-footer{
@@ -311,6 +321,10 @@
 .background-image2 {
   display: none !important;
 }
+.sfondo-onda {
+  display: none !important;
+}
+
 .risoluzione {
   display: inherit !important;
     

@@ -24,20 +24,20 @@ a {
   background-color: #02d783 !important;
 }
 .background-image {
-  background-image: url('/sfondo1.png')!important;
+  background-image: url('/sfondo.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 96px !important;
   line-height: 96px !important;
 }
 .background-image2 {
-  background-image: url('/sfondo1.png')!important;
+  background-image: url('/sfondo.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 100% !important;
 }
 .footer {
-  background-image: url('/sfondo_footer2.png')!important;
+  background-image: url('/sfondo_footer.png')!important;
   height: 190px;
   width: 700px;
 }
@@ -144,7 +144,11 @@ a {
   color: #d2d2d2 !important;
 }
 main {
-  min-height: 850px;
+  min-height: 730px;
+}
+.sfondo-onda {
+  width: 100%;
+  margin-top: -1px;
 }
 .input {
    margin-left: auto !important;
