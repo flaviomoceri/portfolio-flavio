@@ -26,6 +26,7 @@ import {
   MailOutlined,
   ChromeOutlined,
   MenuOutlined,
+  WhatsAppOutlined
 } from "@ant-design/icons";
 import MenuItem from "antd/lib/menu/MenuItem";
 
@@ -250,16 +251,16 @@ const Home = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+              href="https://wa.me/3883289985"
               style={{
-                fontSize: 30,
-                backgroundColor: "#11152c",
+                fontSize: 40,
+                backgroundColor: "transparent",
                 color: "#02d783",
                 padding: 5,
                 borderRadius: 5,
               }}
             >
-              {<LinkedinOutlined />}
+              {<WhatsAppOutlined />}
             </a>
           </div>
         </BackTop>
