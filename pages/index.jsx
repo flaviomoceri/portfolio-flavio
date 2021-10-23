@@ -244,6 +244,12 @@ const Home = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         />
         <link rel="stylesheet" href="animate.min.css" />
+        <meta name="theme-color" content="#569ddd"/>
+        <meta name="msapplication-navbutton-color" content="#569ddd"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="mobile-web-app-status-bar-style" content="black-translucent"/>
       </Head>
       <body>
         <BackTop>
