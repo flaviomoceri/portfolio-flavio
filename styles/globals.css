@@ -321,14 +321,14 @@ animation-iteration-count: infinite;
     font-size: 29px;
     font-weight: 100;
     font-style: oblique;
-    font-family: cursive;
+    font-family: fantasy;
     word-spacing: 12px;
     
 }
 .main-job {
   margin-top: 2px;
-  font-size: 29px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 600;
   font-style: oblique;
   font-family: 'Bebas Neue', cursive;
   word-spacing: 12px;

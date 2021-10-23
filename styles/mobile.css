@@ -166,6 +166,7 @@
  
 }
 @media screen and (max-width: 589px){
+  
   .button-menu {
     display: inherit !important;
     font-size: 24px !important;
@@ -229,7 +230,7 @@
   
 }
 
- 
+
 }
 @media screen and (max-width: 480px){
   .logo {
@@ -252,7 +253,7 @@
 @media screen and (max-width: 396px){
   .main-job {
     
-    font-size: 25px;
+    font-size: 34px;
 
   }
   .main-title {
@@ -274,7 +275,7 @@
   }
   .main-job {
     
-    font-size: 20px;
+    font-size: 28px;
   }
   .main-title {
  
