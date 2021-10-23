@@ -321,7 +321,7 @@ animation-iteration-count: infinite;
     font-size: 29px;
     font-weight: 100;
     font-style: oblique;
-    font-family: fantasy;
+    font-family: fantasy !important;
     word-spacing: 12px;
     
 }
