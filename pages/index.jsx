@@ -251,7 +251,7 @@ const Home = () => {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
         <meta name="mobile-web-app-status-bar-style" content="black-translucent"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap" rel="stylesheet"></link>
       </Head>
       <body>
