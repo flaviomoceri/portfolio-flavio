@@ -44,7 +44,7 @@
      
   }
   .text-machine {
-    font-size: 16.2px;
+    font-size: 14px;
 
 }
 
@@ -172,9 +172,7 @@
     display: inherit !important;
     font-size: 24px !important;
   }
-  main {
-    min-height: 771px;
-  }
+  
   .backtop {
     display: inherit !important;
   }
@@ -248,9 +246,12 @@
   .timeline-mobile {
     display: inherit !important;
   }
+ 
+ 
+}
+
+@media screen and (max-width: 400px){
   
- 
- 
 }
 @media screen and (max-width: 396px){
   .main-job {
@@ -258,6 +259,7 @@
     font-size: 25px;
 
   }
+  
   .main-title {
  
     font-size: 2.4rem !important;
@@ -290,8 +292,8 @@
     font-size: 15px;
   }
   .text-machine {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 14px;
+    
 
 }
 .contact-drawer-button {
@@ -306,11 +308,7 @@
  
 }
 
-@media screen and (max-width: 256px){
-main {
-  min-height: 798px;
-}
-}
+
 @media screen and (max-width: 251px){
   
 .ant-layout-footer{
