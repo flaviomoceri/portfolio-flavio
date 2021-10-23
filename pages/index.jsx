@@ -279,7 +279,7 @@ const Home = () => {
           >
             <Menu.Item key="1" className="logo">
               <a href="#home">
-                <img src="logo_piccolo.png" />
+                <img style={{width: "40px"}} src="logopiccolo1.png" />
               </a>
             </Menu.Item>
             <Menu.Item key="2" className="menuitem-drawer">
