@@ -251,7 +251,7 @@ const Home = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://wa.me/3883289985"
+              href="https://wa.me/393883289985"
               style={{
                 fontSize: 40,
                 backgroundColor: "transparent",
@@ -685,10 +685,10 @@ const Home = () => {
                   onLoopDone={handleDone}
                 />
               </span>
-            </h1>
-            <div>
+              <div>
               <p id="contact"></p>
             </div>
+            </h1>
           </div>
           <div className="contact-pc">
             <div>
