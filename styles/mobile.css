@@ -146,7 +146,8 @@
     width: 75%;
     margin-top: 10px !important;
     border-radius: 20px !important;
-    margin-left: 15%;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .margin-linkedin {
     margin-left: 5% !important;
@@ -222,7 +223,8 @@
   width: 75%;
   margin-top: 10px !important;
   border-radius: 20px !important;
-  
+  margin-left: auto !important;
+    margin-right: auto !important;
 }
 .ant-layout-footer {
   padding: 75px 10px !important;
@@ -253,7 +255,7 @@
 @media screen and (max-width: 396px){
   .main-job {
     
-    font-size: 34px;
+    font-size: 25px;
 
   }
   .main-title {
@@ -275,7 +277,7 @@
   }
   .main-job {
     
-    font-size: 28px;
+    font-size: 22px;
   }
   .main-title {
  
