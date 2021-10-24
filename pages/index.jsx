@@ -349,7 +349,7 @@ const Home = () => {
                 </p>
                 <div className="div-avatar">
                   <img className="main-avatar" src="myAvatar.svg" />
-                  <h1 className="main-job">FRONTEND DEVELOPER</h1>
+                  <h11 className="main-job">FRONTEND DEVELOPER</h11>
                 </div>
                 <a href="#skill">
                   <div className="main-scroll">

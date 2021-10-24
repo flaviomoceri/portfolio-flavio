@@ -308,7 +308,7 @@ animation-iteration-count: infinite;
   display: none !important;
 }
 .main-avatar{
-  width: 50%;
+  width: 62%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -321,7 +321,7 @@ animation-iteration-count: infinite;
     font-style: oblique;
     font-family: fantasy;
     word-spacing: 12px;
-    
+    color: white;
 }
 .main-job {
   margin-top: 8px;
@@ -331,6 +331,7 @@ animation-iteration-count: infinite;
   text-align: center !important;
   font-family: 'Anton', sans-serif !important;
   word-spacing: 2px;
+  color: white;
 }
 
 .ant-carousel .slick-dots li button {
