@@ -325,12 +325,12 @@ animation-iteration-count: infinite;
 }
 .main-job {
   margin-top: 2px;
-  font-size: 29px;
-  font-weight: 100;
+  font-size: 20px;
   font-style: oblique;
-  font-family: 'Anton', sans-serif;
-  word-spacing: 12px;
+  font-weight: 900;
   text-align: center !important;
+  font-family: 'Anton', sans-serif;
+  word-spacing: 2px;
 }
 .ant-carousel .slick-dots li button {
   display: block;
