@@ -329,7 +329,7 @@ animation-iteration-count: infinite;
   font-style: italic !important;
   font-weight: 900 !important;
   text-align: center !important;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton', sans-serif !important;
   word-spacing: 2px;
 }
 
