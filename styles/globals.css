@@ -326,8 +326,8 @@ animation-iteration-count: infinite;
 .main-job {
   margin-top: 8px;
   font-size: 21px;
-  font-style: oblique;
-  font-weight: 100;
+  font-style: italic !important;
+  font-weight: 900 !important;
   text-align: center !important;
   font-family: 'Anton', sans-serif;
   word-spacing: 2px;
