@@ -56,6 +56,11 @@
     margin-left: 4% !important;
   
   }
+  .job {
+      font-size: 29px;
+      
+      
+  }
   .boxshadow_card{
         
     width: 180px !important;
@@ -246,19 +251,16 @@
   .timeline-mobile {
     display: inherit !important;
   }
- 
- 
-}
-
-@media screen and (max-width: 400px){
-  
-}
-@media screen and (max-width: 396px){
   .main-job {
-    
-    font-size: 25px;
+    font-size: 19px;
 
   }
+ 
+}
+
+
+@media screen and (max-width: 396px){
+  
   
   .main-title {
  
@@ -267,7 +269,10 @@
     
   
   }
- 
+  .main-job {
+    font-size: 18px;
+
+  }
  
 }
 @media screen and (max-width: 376px){
@@ -278,9 +283,10 @@
   
   }
   .main-job {
-    
-    font-size: 22px;
+    font-size: 16px;
+
   }
+  
   .main-title {
  
     font-size: 2.1rem !important;
