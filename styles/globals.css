@@ -22,17 +22,17 @@ a {
   background-color: #02d783 !important;
 }
 .background-image {
-  background-image: url('/sfondo.png')!important;
+  background-image: url('/sfondo3.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 96px !important;
   line-height: 96px !important;
 }
 .background-image2 {
-  background-image: url('/sfondo.png')!important;
+  background-image: url('/sfondo3.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
-  height: 100% !important;
+  height: 820px !important;
 }
 .footer {
   background-image: url('/sfondo_footer.png')!important;
@@ -144,7 +144,7 @@ a {
 
 .sfondo-onda {
   width: 100%;
-  margin-top: -14px;
+  margin-top: -12%;
 }
 .input {
    margin-left: auto !important;
