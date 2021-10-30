@@ -34,7 +34,7 @@ const contentStyle = {
   height: "400px",
   color: "#fff",
   lineHeight: "260px",
-  textAlign: "center",
+  textAlign: "center"
 };
 
 
