@@ -1,7 +1,11 @@
+
+
+
 html,
 .body {
   padding: 100;
   margin: 0;
+  font-family: inherit !important;
 }
 
 a {
@@ -330,7 +334,7 @@ animation-iteration-count: infinite;
   font-weight: 900 !important;
   text-align: center !important;
   word-spacing: 2px;
-  font-family: fantasy !important;
+  font-family: 'Anton', sans-serif;
   
 }
 

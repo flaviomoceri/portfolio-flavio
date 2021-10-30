@@ -13,7 +13,7 @@ import { Form, Input, Select } from "antd";
 import { Carousel } from "antd";
 import { Timeline } from "antd";
 import { Divider } from "antd";
-import { BackTop } from "antd";
+import { BackTop } from "antd"
 import {
   InstagramOutlined,
   LinkedinOutlined,
@@ -36,6 +36,9 @@ const contentStyle = {
   lineHeight: "260px",
   textAlign: "center",
 };
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@600&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&family=Teko:wght@600&display=swap');
+</style>
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -161,6 +164,7 @@ const Home = () => {
   const videoError = (data) => {
     console.log("video error==>>", data);
   };
+  
   return (
     <Layout id="home">
       <div className="risoluzione">Risoluzione schermo non disponibile</div>
@@ -250,6 +254,9 @@ const Home = () => {
         <meta name="mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
         <meta name="mobile-web-app-status-bar-style" content="black-translucent"/>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@600&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&family=Teko:wght@600&display=swap');
+</style>
       </Head>
       <body>
         <BackTop>
