@@ -351,8 +351,8 @@ const Home = () => {
                 </p>
                 <div className="div-avatar">
                   <img className="main-avatar" src="myAvatar.svg" />
+                  <img clasName="pngjob" src="fototestolavoro.png"/>
                 </div>
-                <h1 className="testolavoro">FRONTEND DEVELOPER</h1>
                 <a href="#skill">
                   <div className="main-scroll">
                     <h3
