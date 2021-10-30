@@ -351,7 +351,7 @@ const Home = () => {
                 </p>
                 <div className="div-avatar">
                   <img className="main-avatar" src="myAvatar.svg" />
-                  <img clasName="pngjob" src="fototestolavoro.png"/>
+                  <img style={{width: '100%'}} src="fototestolavoro.png"/>
                 </div>
                 <a href="#skill">
                   <div className="main-scroll">

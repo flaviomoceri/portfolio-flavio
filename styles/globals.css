@@ -338,9 +338,7 @@ animation-iteration-count: infinite;
 
   
 }
-.pngjob {
-  width: 100% !important;
-}
+
 
 .ant-carousel .slick-dots li button {
   display: block;
