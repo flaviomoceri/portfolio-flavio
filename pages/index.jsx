@@ -252,9 +252,6 @@ const Home = () => {
         <meta name="mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
         <meta name="mobile-web-app-status-bar-style" content="black-translucent"/>
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@600&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&family=Teko:wght@600&display=swap');
-</style>
       </Head>
       <body>
         <BackTop>
