@@ -323,14 +323,14 @@ animation-iteration-count: infinite;
     word-spacing: 12px;
     
 }
-.main-job {
+.testolavoro {
   margin-top: 8px;
   font-size: 21px;
   font-style: italic !important;
   font-weight: 900 !important;
   text-align: center !important;
-  font-family: sans-serif !important;
   word-spacing: 2px;
+  font-family: fantasy !important;
   
 }
 
@@ -630,7 +630,6 @@ span.ant-select-arrow {
 input, button, select, optgroup, textarea {
   color: inherit;
   font-size: inherit;
-  font-family: inherit;
   line-height: inherit;
 }
 .ant-radio-group {
