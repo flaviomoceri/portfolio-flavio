@@ -5,7 +5,7 @@ html,
 .body {
   padding: 100;
   margin: 0;
-  font-family: inherit !important;
+  
 }
 
 a {
@@ -15,6 +15,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-family: fantasy !important;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: #fff;
+  -webkit-font-feature-settings: 'tnum', "tnum";
+  -moz-font-feature-settings: 'tnum', "tnum";
+  font-feature-settings: 'tnum', "tnum";
 }
 #components-layout-demo-fixed .logo {
   background: rgba(255, 255, 255, 0.2);
@@ -334,7 +346,7 @@ animation-iteration-count: infinite;
   font-weight: 900 !important;
   text-align: center !important;
   word-spacing: 2px;
-  font-family: 'Anton', sans-serif;
+
   
 }
 
