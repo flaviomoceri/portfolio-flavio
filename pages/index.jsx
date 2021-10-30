@@ -371,7 +371,7 @@ const Home = () => {
           </Row>
           <p id="skill"></p>
         </main>
-        <img className='sfondo-onda' src="sfondoonda2.png"/>
+        <img className='sfondo-onda' src="sfondoonda.png"/>
         <Content>
           <div>
             <h1 className={"title-paragraph"}>Skills</h1>

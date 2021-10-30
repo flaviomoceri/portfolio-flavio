@@ -22,14 +22,14 @@ a {
   background-color: #02d783 !important;
 }
 .background-image {
-  background-image: url('/sfondo3.png')!important;
+  background-image: url('/sfondo.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 96px !important;
   line-height: 96px !important;
 }
 .background-image2 {
-  background-image: url('/sfondo3.png')!important;
+  background-image: url('/sfondo.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 820px !important;
@@ -329,7 +329,7 @@ animation-iteration-count: infinite;
   font-style: italic !important;
   font-weight: 900 !important;
   text-align: center !important;
-  font-family: 'Anton', sans-serif !important;
+  font-family: sans-serif !important;
   word-spacing: 2px;
   
 }
@@ -382,6 +382,7 @@ animation-iteration-count: infinite;
     background-color: #f5f5f5;
     font-size: 18px;
     font-weight: 400;
+    font-style: italic;
 }
 .ant-carousel .slick-dots{
   z-index: 1 !important;
