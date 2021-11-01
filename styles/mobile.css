@@ -80,7 +80,7 @@
         margin-left: 40%;
     }
     .main-title {
-      margin-top: 200px;
+      margin-top: 130px;
       font-size: 2.8rem !important;
       color: rgb(246, 246, 246) !important;
       opacity: 0.98 !important;
@@ -184,6 +184,18 @@
     display: inherit !important;
     font-size: 24px !important;
   }
+  .background-image {
+    background-image: url('/sfondomobile2.png')!important;
+    background-size: cover!important;
+    background-blend-mode: darken;
+    height: 96px !important;
+    line-height: 96px !important;
+  }
+  .background-image2 {
+    background-image: url('/sfondomobile2.png')!important;
+    background-size: cover!important;
+    background-blend-mode: darken;
+  }
   
   .backtop {
     display: inherit !important;
@@ -211,7 +223,7 @@
     }
  .main-title {
    text-align: center;
-   margin-top: 150px !important;
+   margin-top: 130px !important;
  }
  .main-paragraph {
   text-align: center;

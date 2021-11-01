@@ -27,14 +27,14 @@ a {
   background-color: #02d783 !important;
 }
 .background-image {
-  background-image: url('/sfondo.png')!important;
+  background-image: url('/sfondo2.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 96px !important;
   line-height: 96px !important;
 }
 .background-image2 {
-  background-image: url('/sfondo.png')!important;
+  background-image: url('/sfondo2.png')!important;
   background-size: cover!important;
   background-blend-mode: darken;
   height: 820px !important;
@@ -123,7 +123,7 @@ a {
 }
 .ant-layout-footer {
   padding: 90px 130px !important;
-  color: #11152c !important;
+  color: #001c29 !important;
   font-size: 20px !important;
   background-color: white !important;
   
@@ -475,7 +475,7 @@ h1, h3, h4, h5, h2 {
   padding: 0 0px !important;
   color: rgba(0, 0, 0, 0.85);
   line-height: 65px !important;
-  background: #11152c !important;
+  background: #001c29 !important;
 }
 .ant-btn-primary:hover, .ant-btn-primary:focus {
   background: #02d783 !important;
@@ -494,7 +494,7 @@ background: white;
 margin-right: 10px;
 }
 ::-webkit-scrollbar:hover{
-  background-color: #11152c ;
+  background-color: #001c29 ;
 border: none;
 }
 ::-webkit-scrollbar-thumb{
@@ -533,7 +533,7 @@ border: none;
 }
 ::selection {
   color: #fff;
-  background: #02d783 !important;
+  background: #5BECB2 !important;
 }
 .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date-today, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date-today {
   background: #02d783 !important;
@@ -611,7 +611,7 @@ ul.ant-menu.ant-menu-dark.menu.ant-menu-root.ant-menu-horizontal {
   color: #02d783 !important;
 }
 .ant-menu-item-selected {
-  color: #11152c !important;
+  color: #001c29 !important;
 }
 i.ant-menu-submenu-arrow {
   color: #02d783 !important;
