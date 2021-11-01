@@ -80,7 +80,7 @@
         margin-left: 40%;
     }
     .main-title {
-      margin-top: 130px;
+      margin-top: 200px;
       font-size: 2.8rem !important;
       color: rgb(246, 246, 246) !important;
       opacity: 0.98 !important;
@@ -132,7 +132,7 @@
         
     }
     .footer {
-      background-image: url('/sfondo_footer.png')!important;
+      background-image: url('/sfondo_footer2.png')!important;
       height: 190px;
       width: 100%;
     }
@@ -223,7 +223,7 @@
     }
  .main-title {
    text-align: center;
-   margin-top: 130px !important;
+   margin-top: 150px !important;
  }
  .main-paragraph {
   text-align: center;
