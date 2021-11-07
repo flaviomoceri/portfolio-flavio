@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import "../styles/mobile.css";
 import "antd/dist/antd.css";
 
-
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

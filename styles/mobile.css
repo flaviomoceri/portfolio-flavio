@@ -237,6 +237,13 @@
 .div-avatar {
   display: inherit !important;
 }
+.main-avatar{
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .main-scroll {
   line-height: 6;
 }
@@ -275,6 +282,12 @@
     width: 100%;
     margin-top: -12%;
   }
+  .main-avatar{
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
  
 }
 
@@ -292,6 +305,11 @@
     
   
   }
+  .text-machine {
+    font-size: 13px;
+    
+
+}
   
  
 }
@@ -315,11 +333,7 @@
   .main-paragraph {
     font-size: 15px;
   }
-  .text-machine {
-    font-size: 13px;
-    
-
-}
+ 
 .contact-drawer-button {
     
   width: 50% !important;

@@ -13,7 +13,7 @@ import { Form, Input, Select } from "antd";
 import { Carousel } from "antd";
 import { Timeline } from "antd";
 import { Divider } from "antd";
-import { BackTop } from "antd"
+import { BackTop } from "antd";
 import {
   InstagramOutlined,
   LinkedinOutlined,
@@ -34,9 +34,8 @@ const contentStyle = {
   height: "400px",
   color: "#fff",
   lineHeight: "260px",
-  textAlign: "center"
+  textAlign: "center",
 };
-
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -98,7 +97,7 @@ function ContactForm() {
         id="message"
         name="message"
         autoSize={{ minRows: 3, maxRows: 5 }}
-        style={{ marginTop: 10 }}
+        style={{ marginTop: 10}}
         required
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
@@ -156,13 +155,8 @@ const Home = () => {
     setIsModalVisible(false);
   };
 
-  const onBuffer = (data) => {
-    console.log("on buffet==>>", data);
-  };
-  const videoError = (data) => {
-    console.log("video error==>>", data);
-  };
-  
+
+
   return (
     <Layout id="home">
       <div className="risoluzione">Risoluzione schermo non disponibile</div>
@@ -213,21 +207,31 @@ const Home = () => {
           Send mail
         </Button>
         <div className="icon-drawer">
-          <a rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/">
-          <LinkedinOutlined  style={{ marginRight: 40, color: 'rgb(119, 119, 121)' }} />
-              </a>
-              <a rel="noreferrer"
-              target="_blank"
-              href="https://github.com/flaviomoceri">
-          <GithubOutlined  style={{ color: 'rgb(119, 119, 121)' }} />
-              </a>
-              <a rel="noreferrer"
-              target="_blank"
-              href="https://www.instagram.com/flaviomoceri_/">
-          <InstagramOutlined  style={{ marginLeft: 40, color: 'rgb(119, 119, 121)' }} />
-              </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+          >
+            <LinkedinOutlined
+              style={{ marginRight: 40, color: "rgb(119, 119, 121)" }}
+            />
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/flaviomoceri"
+          >
+            <GithubOutlined style={{ color: "rgb(119, 119, 121)" }} />
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://www.instagram.com/flaviomoceri_/"
+          >
+            <InstagramOutlined
+              style={{ marginLeft: 40, color: "rgb(119, 119, 121)" }}
+            />
+          </a>
         </div>
       </Drawer>
       <Modal
@@ -246,12 +250,18 @@ const Home = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         />
         <link rel="stylesheet" href="animate.min.css" />
-        <meta name="theme-color" content="#030614"/>
-        <meta name="msapplication-navbutton-color" content="#030614"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="theme-color" content="#030614" />
+        <meta name="msapplication-navbutton-color" content="#030614" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta
+          name="mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
       </Head>
       <body>
         <BackTop>
@@ -281,7 +291,7 @@ const Home = () => {
           >
             <Menu.Item key="1" className="logo">
               <a href="#home">
-                <img style={{width: "40px"}} src="logopiccolo1.png" />
+                <img style={{ width: "40px" }} src="logopiccolo1.png" />
               </a>
             </Menu.Item>
             <Menu.Item key="2" className="menuitem-drawer">
@@ -324,21 +334,31 @@ const Home = () => {
           <Row>
             <Col className="main-icon" span={3}>
               <div className="main-icon">
-              <a rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/">
-                <LinkedinOutlined style={{ color: 'rgb(119, 119, 121)' }} />
-              </a>
-              <a rel="noreferrer"
-              target="_blank"
-              href="https://github.com/flaviomoceri" >
-                <GithubOutlined style={{ marginTop: 30, color: 'rgb(119, 119, 121)' }} />
-              </a>
-              <a rel="noreferrer"
-              target="_blank"
-              href="https://www.instagram.com/flaviomoceri_/">
-                <InstagramOutlined style={{ marginTop: 30, color: 'rgb(119, 119, 121)' }} />
-              </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+                >
+                  <LinkedinOutlined style={{ color: "rgb(119, 119, 121)" }} />
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/flaviomoceri"
+                >
+                  <GithubOutlined
+                    style={{ marginTop: 30, color: "rgb(119, 119, 121)" }}
+                  />
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.instagram.com/flaviomoceri_/"
+                >
+                  <InstagramOutlined
+                    style={{ marginTop: 30, color: "rgb(119, 119, 121)" }}
+                  />
+                </a>
               </div>
             </Col>
             <Col span={20} md={9}>
@@ -351,7 +371,7 @@ const Home = () => {
                 </p>
                 <div className="div-avatar">
                   <img className="main-avatar" src="myAvatar.svg" />
-                  <img style={{width: '100%'}} src="fototestolavoro.png"/>
+                  <img style={{ width: "100%" }} src="fototestolavoro.png" />
                 </div>
                 <a href="#skill">
                   <div className="main-scroll">
@@ -373,7 +393,7 @@ const Home = () => {
           </Row>
           <p id="skill"></p>
         </main>
-        <img className='sfondo-onda' src="sfondoonda.png"/>
+        <img className="sfondo-onda" src="sfondoonda.png" />
         <Content>
           <div>
             <h1 className={"title-paragraph"}>Skills</h1>
@@ -527,7 +547,7 @@ const Home = () => {
                 <Row>
                   <Col span={20}>
                     <p>
-                      I&apos;m a novice frontend developer, I enjoy programming
+                      I&apos;m a novice frontend developer, I enjoy coding
                       simple things and solving new problems every day. I think
                       that teamwork is the most important part to carry out
                       great projects because being together with other people
@@ -562,7 +582,7 @@ const Home = () => {
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
-                on their own determination,
+                on their own determination.
               </p>
             </Timeline.Item>
             <Timeline.Item
@@ -626,7 +646,7 @@ const Home = () => {
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
-                on their own determination,
+                on their own determination.
               </p>
             </Timeline.Item>
             <Timeline.Item
@@ -674,7 +694,7 @@ const Home = () => {
               most important technologies that
               <br />
               could allow me to develop the best possible knowledge, such as{" "}
-              <span style={{ color: "#02d783" }}>
+              <span style={{ color: "#02d783", fontSize: "17px" }}>
                 <Typewriter
                   words={[
                     "ReactJS",
@@ -694,8 +714,8 @@ const Home = () => {
                 />
               </span>
               <div>
-              <p id="contact"></p>
-            </div>
+                <p id="contact"></p>
+              </div>
             </h1>
           </div>
           <div className="contact-pc">
@@ -777,7 +797,7 @@ const Home = () => {
       </body>
       <Footer className="footer">
         <div>
-          <h15 className='footer-text'>
+          <h15 className="footer-text">
             Coded with 💚 by{" "}
             <a
               className="text_footer"
