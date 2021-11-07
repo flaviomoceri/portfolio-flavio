@@ -26,6 +26,13 @@ a {
 .ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
   background-color: #02d783 !important;
 }
+.ant-menu-horizontal {
+  line-height: 46px;
+  border: 0;
+  border-bottom: 1px solid transparent !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .background-image {
   background-image: url('/sfondo2.png')!important;
   background-size: cover!important;
@@ -297,6 +304,7 @@ animation-iteration-count: infinite;
   color: rgb(119, 119, 121);
   font-size: 2rem;
   position: fixed;
+  z-index: 1 !important;
 }
 .text-carousel {
   color: black !important;
@@ -451,9 +459,7 @@ h1, h3, h4, h5, h2 {
   
 }
 
-.ant-menu-item a {
-  color: white !important;
-}
+
 .ant-btn:hover, .ant-btn:focus {
   color: black !important;
   background: #fff;

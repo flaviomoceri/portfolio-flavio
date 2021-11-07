@@ -12,6 +12,7 @@
     "@formspree/react": "^2.2.4",
     "animate.css": "^4.1.1",
     "antd": "^4.16.13",
+    "aos": "^2.3.4",
     "date-fns": "^2.24.0",
     "html-react-parser": "^1.4.0",
     "html-to-jsx": "0.0.4",

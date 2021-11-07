@@ -14,6 +14,8 @@ import { Carousel } from "antd";
 import { Timeline } from "antd";
 import { Divider } from "antd";
 import { BackTop } from "antd";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   InstagramOutlined,
   LinkedinOutlined,
@@ -155,6 +157,10 @@ const Home = () => {
     setIsModalVisible(false);
   };
 
+  useEffect(() => {
+    Aos.init({once: true, duration: 1000});
+
+  }, [] )
 
 
   return (
@@ -306,9 +312,10 @@ const Home = () => {
             </Menu.Item>
             <Menu.Item key="4" className="menuitem-drawer">
               <a href="#contact">Contacts</a>
-            </Menu.Item>
+            </Menu.Item> 
             <Menu.Item className="margin-linkedin">
-              <a
+            <div>
+            <a
                 href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
                 target="_blank"
                 rel="noreferrer"
@@ -326,6 +333,7 @@ const Home = () => {
                   LinkedIn
                 </Button>
               </a>
+              </div>
             </Menu.Item>
             <div className="button-menu">
               <a className="color-menu" onClick={showDrawer}>
@@ -400,8 +408,8 @@ const Home = () => {
         <img className="sfondo-onda" src="sfondoonda.png" />
         <Content>
           <div>
-            <h1 className={"title-paragraph"}>Skills</h1>
-            <Carousel className={"carousel"} autoplay loop>
+            <h1 data-aos="fade" className={"title-paragraph"}>Skills</h1>
+            <Carousel data-aos="fade" className={"carousel"} autoplay loop>
               <div>
                 <Row style={contentStyle}>
                   <Col xs={{ span: 5, offset: 4 }} lg={{ span: 5, offset: 4 }}>
@@ -469,7 +477,7 @@ const Home = () => {
               </div>
             </Carousel>
             {/* Carousel on Mobile */}
-            <Carousel className="carousel-mobile" autoplay loop>
+            <Carousel data-aos="fade" className="carousel-mobile" autoplay loop>
               <div>
                 <Card
                   hoverable
@@ -532,10 +540,10 @@ const Home = () => {
             <Divider />
             <div>
               <div>
-                <img className="about-image" src="about.png" />
+                <img data-aos="fade-right" className="about-image" src="about.png" />
               </div>
-              <h2 className="title-paragraph2">About Me</h2>
-              <div className="paragraph2">
+              <h2 data-aos="fade" className="title-paragraph2">About Me</h2>
+              <div data-aos="fade" className="paragraph2">
                 <h7>
                   The secret of getting
                   <br />
@@ -550,7 +558,7 @@ const Home = () => {
               <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
                 <Row>
                   <Col span={20}>
-                    <p>
+                    <p data-aos="fade">
                       I&apos;m a novice frontend developer, I enjoy coding
                       simple things and solving new problems every day. I think
                       that teamwork is the most important part to carry out
@@ -567,11 +575,11 @@ const Home = () => {
           </div>
           <Timeline mode="alternate" className="timeline">
             <Timeline.Item>
-              <h1 className="title_timeline">
+              <h1 data-aos="fade" className="title_timeline">
                 The beginning is always the hardest part.
               </h1>
-              <img className="image_timeline" src="start.png" />
-              <p style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
+              <img data-aos="fade" className="image_timeline" src="start.png" />
+              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -580,9 +588,9 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
-              <h1 className="title_timeline">Codecademy and Myself</h1>
-              <img className="image_timeline" src="codecademy.png" />
-              <p style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">Codecademy and Myself</h1>
+              <img data-aos="fade" className="image_timeline" src="codecademy.png" />
+              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -592,9 +600,9 @@ const Home = () => {
             <Timeline.Item
               dot={<ShoppingCartOutlined style={{ fontSize: "16px" }} />}
             >
-              <h1 className="title_timeline">The E-Commerce World</h1>
-              <img className="image_timeline" src="e-commerce.png" />
-              <p style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">The E-Commerce World</h1>
+              <img data-aos="fade" className="image_timeline" src="e-commerce.png" />
+              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -606,10 +614,10 @@ const Home = () => {
                 rel="noreferrer"
                 href="https://www.ricerca-libri.it/"
               >
-                <h1 className="title_timeline">Ricerca-Libri.it</h1>
+                <h1 data-aos="fade" className="title_timeline">Ricerca-Libri.it</h1>
               </a>
-              <img className="image_timeline" src="ricerca.png" />
-              <p style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
+              <img data-aos="fade" className="image_timeline" src="ricerca.png" />
+              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -617,9 +625,9 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item>
-              <h1 className="title_timeline">For the future</h1>
-              <img className="image_timeline" src="future.png" />
-              <p style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">For the future</h1>
+              <img data-aos="fade" className="image_timeline" src="future.png" />
+              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -631,11 +639,11 @@ const Home = () => {
           {/* Timeline on Mobile */}
           <Timeline mode="left" className="timeline-mobile">
             <Timeline.Item>
-              <h1 className="title_timeline">
+              <h1 data-aos="fade" className="title_timeline">
                 The beginning is always the hardest part.
               </h1>
-              <img className="image_timeline" src="start.png" />
-              <p style={{ color: "grey" }}>
+              <img data-aos="fade" className="image_timeline" src="start.png" />
+              <p data-aos="fade" style={{ color: "grey" }}>
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -644,9 +652,9 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
-              <h1 className="title_timeline">Codecademy and Myself</h1>
-              <img className="image_timeline" src="codecademy.png" />
-              <p style={{ color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">Codecademy and Myself</h1>
+              <img data-aos="fade" className="image_timeline" src="codecademy.png" />
+              <p data-aos="fade" style={{ color: "grey" }}>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -656,9 +664,9 @@ const Home = () => {
             <Timeline.Item
               dot={<ShoppingCartOutlined style={{ fontSize: "16px" }} />}
             >
-              <h1 className="title_timeline">The E-Commerce World</h1>
-              <img className="image_timeline" src="e-commerce.png" />
-              <p style={{ color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">The E-Commerce World</h1>
+              <img data-aos="fade" className="image_timeline" src="e-commerce.png" />
+              <p data-aos="fade" style={{ color: "grey" }}>
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -670,10 +678,10 @@ const Home = () => {
                 rel="noreferrer"
                 href="https://www.ricerca-libri.it/"
               >
-                <h1 className="title_timeline">Ricerca-Libri.it</h1>
+                <h1 data-aos="fade" className="title_timeline">Ricerca-Libri.it</h1>
               </a>
-              <img className="image_timeline" src="ricerca.png" />
-              <p style={{ color: "grey" }}>
+              <img data-aos="fade" className="image_timeline" src="ricerca.png" />
+              <p data-aos="fade" style={{ color: "grey" }}>
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -681,9 +689,9 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item>
-              <h1 className="title_timeline">For the future</h1>
-              <img className="image_timeline" src="future.png" />
-              <p style={{ color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">For the future</h1>
+              <img data-aos="fade" className="image_timeline" src="future.png" />
+              <p data-aos="fade" style={{ color: "grey" }}>
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -693,7 +701,7 @@ const Home = () => {
             </Timeline.Item>
           </Timeline>
           <div>
-            <h1 className="text-machine">
+            <h1 data-aos="fade" className="text-machine">
               Among the knowledge acquired over the years, I tried to learn the
               most important technologies that
               <br />
@@ -724,11 +732,11 @@ const Home = () => {
           </div>
           <div className="contact-pc">
             <div>
-              <Card className="form">
+              <Card data-aos="fade" className="form">
                 <ContactForm />
               </Card>
               <div className="paragraph-contact">
-                <h7>How to contact me</h7>
+                <h7 data-aos="fade">How to contact me</h7>
               </div>
               <div></div>
               {
@@ -738,7 +746,7 @@ const Home = () => {
               }
               <a href="tel:+393883289985" rel="noreferrer" target="_blank">
                 <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
-                  <p className="contact">
+                  <p data-aos="fade" className="contact">
                     {
                       <PhoneOutlined
                         style={{
@@ -758,7 +766,7 @@ const Home = () => {
                 target="_blank"
               >
                 <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
-                  <p className="contact">
+                  <p data-aos="fade" className="contact">
                     {
                       <MailOutlined
                         style={{
@@ -778,7 +786,7 @@ const Home = () => {
                 target="_blank"
               >
                 <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
-                  <p className="contact">
+                  <p data-aos="fade" className="contact">
                     {
                       <ChromeOutlined
                         style={{
@@ -792,7 +800,7 @@ const Home = () => {
                   </p>
                 </div>
               </a>
-              <Card className="form-mobile">
+              <Card data-aos="fade" className="form-mobile">
                 <ContactForm />
               </Card>
             </div>
