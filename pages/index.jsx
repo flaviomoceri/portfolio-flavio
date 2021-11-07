@@ -244,6 +244,9 @@ const Home = () => {
       </Modal>
       <Head>
         <title>Flavio Moceri&apos;s Portfolio</title>
+        <meta name="description" content="Hi, I'm Flavio (Web Developer),
+        I design and code beautifully simple things, and I love what I do.
+         I'm a novice frontend developer, I enjoy coding simple things and solving new problems every day."></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
