@@ -819,7 +819,7 @@ const Home = () => {
                 </h7>
               </div>
               <h1 className="title-contact">
-                Do you have illustration project? Let's talk.
+                Do you have illustration project? Lets talk.
               </h1>
               <Button onClick={showModal} className="button-contact">
                 <BsFillChatFill
@@ -838,7 +838,7 @@ const Home = () => {
                     fontWeight: 700,
                   }}
                 >
-                  LET'S TALK NOW
+                  LETS TALK NOW
                 </h3>
               </Button>
             </div>
