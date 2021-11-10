@@ -14,7 +14,7 @@ import { Carousel } from "antd";
 import { Timeline } from "antd";
 import { Divider } from "antd";
 import { BackTop } from "antd";
-import { BsFillChatFill } from 'react-icons/bs';
+import { BsFillChatFill } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {
@@ -30,7 +30,7 @@ import {
   ChromeOutlined,
   MenuOutlined,
   WhatsAppOutlined,
-  ArrowRightOutlined
+  ArrowRightOutlined,
 } from "@ant-design/icons";
 import MenuItem from "antd/lib/menu/MenuItem";
 
@@ -40,7 +40,6 @@ const contentStyle = {
   lineHeight: "260px",
   textAlign: "center",
 };
-
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -102,7 +101,7 @@ function ContactForm() {
         id="message"
         name="message"
         autoSize={{ minRows: 3, maxRows: 5 }}
-        style={{ marginTop: 10}}
+        style={{ marginTop: 10 }}
         required
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
@@ -131,7 +130,7 @@ const Home = () => {
       setNavbar(false);
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     return () => window.removeEventListener("scroll", changeBackground);
@@ -161,10 +160,8 @@ const Home = () => {
   };
 
   useEffect(() => {
-    Aos.init({once: true, duration: 1000});
-
-  }, [] )
-
+    Aos.init({ once: true, duration: 1000 });
+  }, []);
 
   return (
     <Layout id="home">
@@ -253,10 +250,13 @@ const Home = () => {
       </Modal>
       <Head>
         <title>Flavio Moceri&apos;s Portfolio</title>
-        <meta name="description" content="Hi, I'm Flavio (Web Developer),
+        <meta
+          name="description"
+          content="Hi, I'm Flavio (Web Developer),
         I design and code beautifully simple things, and I love what I do.
-         I'm a novice frontend developer, I enjoy coding simple things and solving new problems every day."></meta>
-         <link rel="shortcut icon" type="image/png" src="fotohead.jpeg" />
+         I'm a novice frontend developer, I enjoy coding simple things and solving new problems every day."
+        ></meta>
+        <link rel="shortcut icon" type="image/png" src="fotohead.jpeg" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -315,27 +315,27 @@ const Home = () => {
             </Menu.Item>
             <Menu.Item key="4" className="menuitem-drawer">
               <a href="#contact">Contacts</a>
-            </Menu.Item> 
+            </Menu.Item>
             <Menu.Item className="margin-linkedin">
-            <div>
-            <a
-                href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button
-                  icon={<LinkedinOutlined />}
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+                  target="_blank"
                   rel="noreferrer"
-                  style={{
-                    backgroundColor: "#495FEF",
-                    color: "#FDFFFF",
-                    borderRadius: "15px",
-                    height: '35px'
-                  }}
                 >
-                  LinkedIn
-                </Button>
-              </a>
+                  <Button
+                    icon={<LinkedinOutlined />}
+                    rel="noreferrer"
+                    style={{
+                      backgroundColor: "#495FEF",
+                      color: "#FDFFFF",
+                      borderRadius: "15px",
+                      height: "35px",
+                    }}
+                  >
+                    LinkedIn
+                  </Button>
+                </a>
               </div>
             </Menu.Item>
             <div className="button-menu">
@@ -378,21 +378,28 @@ const Home = () => {
             </Col>
             <Col span={20} md={9}>
               <div className="main-div">
-              <h6 className="main-subtitle">Web Developer, illustrator, graphic designer</h6>
-                <h1 className="main-title">I design and code simple things for clients.</h1>
+                <h6 className="main-subtitle">
+                  Web Developer, illustrator, graphic designer
+                </h6>
+                <h1 className="main-title">
+                  I design and code simple things for clients.
+                </h1>
                 <a href="#skill">
                   <div>
                     <Button className="main-scroll">
-                    <h3
-                      style={{ fontSize: '13px',
-                        color: 'white !important',
-                        letterSpacing: '1.63px',
-                        fontWeight: 700 }}
-                    >
-                       
-                      EXPLORE WORKS⠀
-                      <ArrowRightOutlined style={{ fontSize: '20px', marginLeft: '10px'}} />
-                    </h3>
+                      <h3
+                        style={{
+                          fontSize: "13px",
+                          color: "white !important",
+                          letterSpacing: "1.63px",
+                          fontWeight: 700,
+                        }}
+                      >
+                        EXPLORE WORKS⠀
+                        <ArrowRightOutlined
+                          style={{ fontSize: "20px", marginLeft: "10px" }}
+                        />
+                      </h3>
                     </Button>
                   </div>
                 </a>
@@ -402,14 +409,16 @@ const Home = () => {
               <img className="avatar" src="mainphotos.png" />
             </Col>
             <div className="div-avatar">
-                  <img className="main-avatar" src="mainphotos.png" />
-                </div>
+              <img className="main-avatar" src="mainphotos.png" />
+            </div>
           </Row>
           <p id="skill"></p>
         </main>
         <Content>
           <div>
-            <h1 data-aos="fade" className={"title-paragraph"}>Skills</h1>
+            <h1 data-aos="fade" className={"title-paragraph"}>
+              Skills
+            </h1>
             <Carousel data-aos="fade" className={"carousel"} autoplay loop>
               <div>
                 <Row style={contentStyle}>
@@ -541,9 +550,15 @@ const Home = () => {
             <Divider />
             <div>
               <div>
-                <img data-aos="fade-right" className="about-image" src="about.svg" />
+                <img
+                  data-aos="fade-right"
+                  className="about-image"
+                  src="about.svg"
+                />
               </div>
-              <h2 data-aos="fade" className="title-paragraph2">About Me</h2>
+              <h2 data-aos="fade" className="title-paragraph2">
+                About Me
+              </h2>
               <div data-aos="fade" className="paragraph2">
                 <h7>
                   The secret of getting
@@ -580,7 +595,10 @@ const Home = () => {
                 The beginning is always the hardest part.
               </h1>
               <img data-aos="fade" className="image_timeline" src="start.png" />
-              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
+              <p
+                data-aos="fade"
+                style={{ marginRight: 20, marginLeft: 20, color: "grey" }}
+              >
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -589,9 +607,18 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
-              <h1 data-aos="fade" className="title_timeline">Codecademy and Myself</h1>
-              <img data-aos="fade" className="image_timeline" src="codecademy.png" />
-              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">
+                Codecademy and Myself
+              </h1>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="codecademy.png"
+              />
+              <p
+                data-aos="fade"
+                style={{ marginRight: 20, marginLeft: 70, color: "grey" }}
+              >
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -601,9 +628,18 @@ const Home = () => {
             <Timeline.Item
               dot={<ShoppingCartOutlined style={{ fontSize: "16px" }} />}
             >
-              <h1 data-aos="fade" className="title_timeline">The E-Commerce World</h1>
-              <img data-aos="fade" className="image_timeline" src="e-commerce.png" />
-              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">
+                The E-Commerce World
+              </h1>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="e-commerce.png"
+              />
+              <p
+                data-aos="fade"
+                style={{ marginRight: 20, marginLeft: 20, color: "grey" }}
+              >
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -615,10 +651,19 @@ const Home = () => {
                 rel="noreferrer"
                 href="https://www.ricerca-libri.it/"
               >
-                <h1 data-aos="fade" className="title_timeline">Ricerca-Libri.it</h1>
+                <h1 data-aos="fade" className="title_timeline">
+                  Ricerca-Libri.it
+                </h1>
               </a>
-              <img data-aos="fade" className="image_timeline" src="ricerca.png" />
-              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 70, color: "grey" }}>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="ricerca.png"
+              />
+              <p
+                data-aos="fade"
+                style={{ marginRight: 20, marginLeft: 70, color: "grey" }}
+              >
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -626,9 +671,18 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item>
-              <h1 data-aos="fade" className="title_timeline">For the future</h1>
-              <img data-aos="fade" className="image_timeline" src="future.png" />
-              <p data-aos="fade" style={{ marginRight: 20, marginLeft: 20, color: "grey" }}>
+              <h1 data-aos="fade" className="title_timeline">
+                For the future
+              </h1>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="future.png"
+              />
+              <p
+                data-aos="fade"
+                style={{ marginRight: 20, marginLeft: 20, color: "grey" }}
+              >
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -653,8 +707,14 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
-              <h1 data-aos="fade" className="title_timeline">Codecademy and Myself</h1>
-              <img data-aos="fade" className="image_timeline" src="codecademy.png" />
+              <h1 data-aos="fade" className="title_timeline">
+                Codecademy and Myself
+              </h1>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="codecademy.png"
+              />
               <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
@@ -665,8 +725,14 @@ const Home = () => {
             <Timeline.Item
               dot={<ShoppingCartOutlined style={{ fontSize: "16px" }} />}
             >
-              <h1 data-aos="fade" className="title_timeline">The E-Commerce World</h1>
-              <img data-aos="fade" className="image_timeline" src="e-commerce.png" />
+              <h1 data-aos="fade" className="title_timeline">
+                The E-Commerce World
+              </h1>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="e-commerce.png"
+              />
               <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
@@ -679,9 +745,15 @@ const Home = () => {
                 rel="noreferrer"
                 href="https://www.ricerca-libri.it/"
               >
-                <h1 data-aos="fade" className="title_timeline">Ricerca-Libri.it</h1>
+                <h1 data-aos="fade" className="title_timeline">
+                  Ricerca-Libri.it
+                </h1>
               </a>
-              <img data-aos="fade" className="image_timeline" src="ricerca.png" />
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="ricerca.png"
+              />
               <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
@@ -690,8 +762,14 @@ const Home = () => {
               </p>
             </Timeline.Item>
             <Timeline.Item>
-              <h1 data-aos="fade" className="title_timeline">For the future</h1>
-              <img data-aos="fade" className="image_timeline" src="future.png" />
+              <h1 data-aos="fade" className="title_timeline">
+                For the future
+              </h1>
+              <img
+                data-aos="fade"
+                className="image_timeline"
+                src="future.png"
+              />
               <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
@@ -703,7 +781,8 @@ const Home = () => {
           </Timeline>
           <div>
             <h1 data-aos="fade" className="text-machine">
-            Over the years, I have tried to learn the best technologies such as{" "}
+              Over the years, I have tried to learn the best technologies such
+              as{" "}
               <span style={{ color: "#495FEF", fontSize: "17px" }}>
                 <Typewriter
                   words={[
@@ -731,29 +810,44 @@ const Home = () => {
           <div className="contact-pc">
             <div>
               <div className="paragraph-contact">
-                <h7 data-aos="fade"><img style={{width: "19px", marginRight: "16px"}} src="pallino.png"/>AVAILABLE FOR FREELANCE PROJECTS</h7>
+                <h7 data-aos="fade">
+                  <img
+                    style={{ width: "19px", marginRight: "16px" }}
+                    src="pallino.png"
+                  />
+                  AVAILABLE FOR FREELANCE PROJECTS
+                </h7>
               </div>
-              <h1 className="title-contact">Do you have illustration project? Let's talk.</h1>
+              <h1 className="title-contact">
+                Do you have illustration project? Let's talk.
+              </h1>
               <Button onClick={showModal} className="button-contact">
-              <BsFillChatFill style={{fontSize: '20px', float: 'left', color: 'white', marginLeft: '20px'}} />
-                    <h3
-                      style={{ fontSize: '13px',
-                        color: 'white !important',
-                        letterSpacing: '1.63px',
-                        fontWeight: 700 }}
-                    >
-                      LET'S TALK NOW
-                    </h3>
-                    </Button>
+                <BsFillChatFill
+                  style={{
+                    fontSize: "20px",
+                    float: "left",
+                    color: "white",
+                    marginLeft: "20px",
+                  }}
+                />
+                <h3
+                  style={{
+                    fontSize: "13px",
+                    color: "white !important",
+                    letterSpacing: "1.63px",
+                    fontWeight: 700,
+                  }}
+                >
+                  LET'S TALK NOW
+                </h3>
+              </Button>
             </div>
           </div>
         </Content>
       </body>
       <Footer className="footer">
         <div>
-          <h15 className="footer-text">
-          © 2021 ALL RIGHT RESEVED
-          </h15>
+          <h15 className="footer-text">© 2021 ALL RIGHT RESEVED</h15>
         </div>
       </Footer>
     </Layout>
