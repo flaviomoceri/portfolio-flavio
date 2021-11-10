@@ -1,0 +1,61 @@
+ {
+                <div className="lineoutlined">
+                  <LineOutlined />
+                </div>
+              }
+              <a href="tel:+393883289985" rel="noreferrer" target="_blank">
+                <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
+                  <p data-aos="fade" className="contact">
+                    {
+                      <PhoneOutlined
+                        style={{
+                          color: "#495FEF",
+                          marginRight: "9px",
+                          fontSize: "19px",
+                        }}
+                      />
+                    }
+                    +39 388 328 9985
+                  </p>
+                </div>
+              </a>
+              <a
+                href="mailto:moceri.flavio@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
+                  <p data-aos="fade" className="contact">
+                    {
+                      <MailOutlined
+                        style={{
+                          color: "#495FEF",
+                          marginRight: "9px",
+                          fontSize: "19px",
+                        }}
+                      />
+                    }
+                    moceri.flavio@gmail.com
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://flaviomoceri.it"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
+                  <p data-aos="fade" className="contact">
+                    {
+                      <ChromeOutlined
+                        style={{
+                          color: "#495FEF",
+                          marginRight: "9px",
+                          fontSize: "19px",
+                        }}
+                      />
+                    }
+                    flaviomoceri.it
+                  </p>
+                </div>
+              </a>

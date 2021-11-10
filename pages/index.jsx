@@ -14,6 +14,7 @@ import { Carousel } from "antd";
 import { Timeline } from "antd";
 import { Divider } from "antd";
 import { BackTop } from "antd";
+import { BsFillChatFill } from 'react-icons/bs';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {
@@ -28,7 +29,8 @@ import {
   MailOutlined,
   ChromeOutlined,
   MenuOutlined,
-  WhatsAppOutlined
+  WhatsAppOutlined,
+  ArrowRightOutlined
 } from "@ant-design/icons";
 import MenuItem from "antd/lib/menu/MenuItem";
 
@@ -38,6 +40,7 @@ const contentStyle = {
   lineHeight: "260px",
   textAlign: "center",
 };
+
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -128,7 +131,7 @@ const Home = () => {
       setNavbar(false);
     }
   };
-
+  
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     return () => window.removeEventListener("scroll", changeBackground);
@@ -283,7 +286,7 @@ const Home = () => {
               style={{
                 fontSize: 40,
                 backgroundColor: "transparent",
-                color: "#02d783",
+                color: "rgb(86, 179, 129)",
                 padding: 5,
                 borderRadius: 5,
               }}
@@ -301,7 +304,7 @@ const Home = () => {
           >
             <Menu.Item key="1" className="logo">
               <a href="#home">
-                <img style={{ width: "40px" }} src="logopiccolo1.png" />
+                <img style={{ width: "40px" }} src="logopiccolo2.png" />
               </a>
             </Menu.Item>
             <Menu.Item key="2" className="menuitem-drawer">
@@ -324,10 +327,10 @@ const Home = () => {
                   icon={<LinkedinOutlined />}
                   rel="noreferrer"
                   style={{
-                    backgroundColor: "#02d783",
-                    borderColor: "black",
+                    backgroundColor: "#495FEF",
                     color: "#FDFFFF",
                     borderRadius: "15px",
+                    height: '35px'
                   }}
                 >
                   LinkedIn
@@ -375,37 +378,35 @@ const Home = () => {
             </Col>
             <Col span={20} md={9}>
               <div className="main-div">
-                <h1 className="main-title">Hi, I&apos;m Flavio</h1>
-                <h6 className="main-subtitle">Web Developer</h6>
-                <p className="main-paragraph">
-                  I design and code beautifully simple things, and I love what I
-                  do.
-                </p>
-                <div className="div-avatar">
-                  <img className="main-avatar" src="myAvatar.svg" />
-                  <img style={{ width: "100%" }} src="fototestolavoro.png" />
-                </div>
+              <h6 className="main-subtitle">Web Developer, illustrator, graphic designer</h6>
+                <h1 className="main-title">I design and code simple things for clients.</h1>
                 <a href="#skill">
-                  <div className="main-scroll">
+                  <div>
+                    <Button className="main-scroll">
                     <h3
-                      className="animated bounce"
-                      style={{ fontSize: 24, color: "#F6F6F6" }}
+                      style={{ fontSize: '13px',
+                        color: 'white !important',
+                        letterSpacing: '1.63px',
+                        fontWeight: 700 }}
                     >
-                      Scroll down⠀
-                      <img style={{ width: 20 }} src="scroll-down.svg" />
+                       
+                      EXPLORE WORKS⠀
+                      <ArrowRightOutlined style={{ fontSize: '20px', marginLeft: '10px'}} />
                     </h3>
+                    </Button>
                   </div>
                 </a>
               </div>
             </Col>
-            <Col span={11}>
-              <img className="avatar" src="myAvatar.svg" />
-              <h1 className="job">FRONTEND DEVELOPER</h1>
+            <Col span={8}>
+              <img className="avatar" src="mainphotos.png" />
             </Col>
+            <div className="div-avatar">
+                  <img className="main-avatar" src="mainphotos.png" />
+                </div>
           </Row>
           <p id="skill"></p>
         </main>
-        <img className="sfondo-onda" src="sfondoonda.png" />
         <Content>
           <div>
             <h1 data-aos="fade" className={"title-paragraph"}>Skills</h1>
@@ -540,7 +541,7 @@ const Home = () => {
             <Divider />
             <div>
               <div>
-                <img data-aos="fade-right" className="about-image" src="about.png" />
+                <img data-aos="fade-right" className="about-image" src="about.svg" />
               </div>
               <h2 data-aos="fade" className="title-paragraph2">About Me</h2>
               <div data-aos="fade" className="paragraph2">
@@ -643,7 +644,7 @@ const Home = () => {
                 The beginning is always the hardest part.
               </h1>
               <img data-aos="fade" className="image_timeline" src="start.png" />
-              <p data-aos="fade" style={{ color: "grey" }}>
+              <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 I owe everything to my brother, he passed on his passion to me.
                 I thought several times about leaving for friends or other, but
                 I always continued, I feel that if you really believe it, sooner
@@ -654,7 +655,7 @@ const Home = () => {
             <Timeline.Item dot={<CodeOutlined style={{ fontSize: "16px" }} />}>
               <h1 data-aos="fade" className="title_timeline">Codecademy and Myself</h1>
               <img data-aos="fade" className="image_timeline" src="codecademy.png" />
-              <p data-aos="fade" style={{ color: "grey" }}>
+              <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 Through Codecademy and myself, I was able to acquire the
                 knowledge, thanks to the internet now anyone can learn
                 everything they want, there are no more excuses, it all depends
@@ -666,7 +667,7 @@ const Home = () => {
             >
               <h1 data-aos="fade" className="title_timeline">The E-Commerce World</h1>
               <img data-aos="fade" className="image_timeline" src="e-commerce.png" />
-              <p data-aos="fade" style={{ color: "grey" }}>
+              <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 In the winter of 2019 with the pandemic, many shops needed a
                 site to continue working, scared by the situation, so I started
                 making them, gaining a lot of experience.
@@ -681,7 +682,7 @@ const Home = () => {
                 <h1 data-aos="fade" className="title_timeline">Ricerca-Libri.it</h1>
               </a>
               <img data-aos="fade" className="image_timeline" src="ricerca.png" />
-              <p data-aos="fade" style={{ color: "grey" }}>
+              <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 I create this site to learn and for fun, you can know the books
                 to acquire to start the school year. Through WebScraping I can
                 get the information by creating a bot from Libraccio.it and
@@ -691,7 +692,7 @@ const Home = () => {
             <Timeline.Item>
               <h1 data-aos="fade" className="title_timeline">For the future</h1>
               <img data-aos="fade" className="image_timeline" src="future.png" />
-              <p data-aos="fade" style={{ color: "grey" }}>
+              <p data-aos="fade" style={{ color: "grey", marginRight: "5%" }}>
                 This year I will finish high school. For the future, my choice
                 is to do a three-year degree at LUISS, such as: Management and
                 Computer Science or Economics and Management, or to enroll at
@@ -702,11 +703,8 @@ const Home = () => {
           </Timeline>
           <div>
             <h1 data-aos="fade" className="text-machine">
-              Among the knowledge acquired over the years, I tried to learn the
-              most important technologies that
-              <br />
-              could allow me to develop the best possible knowledge, such as{" "}
-              <span style={{ color: "#02d783", fontSize: "17px" }}>
+            Over the years, I have tried to learn the best technologies such as{" "}
+              <span style={{ color: "#495FEF", fontSize: "17px" }}>
                 <Typewriter
                   words={[
                     "ReactJS",
@@ -732,77 +730,21 @@ const Home = () => {
           </div>
           <div className="contact-pc">
             <div>
-              <Card data-aos="fade" className="form">
-                <ContactForm />
-              </Card>
               <div className="paragraph-contact">
-                <h7 data-aos="fade">How to contact me</h7>
+                <h7 data-aos="fade"><img style={{width: "19px", marginRight: "16px"}} src="pallino.png"/>AVAILABLE FOR FREELANCE PROJECTS</h7>
               </div>
-              <div></div>
-              {
-                <div className="lineoutlined">
-                  <LineOutlined />
-                </div>
-              }
-              <a href="tel:+393883289985" rel="noreferrer" target="_blank">
-                <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
-                  <p data-aos="fade" className="contact">
-                    {
-                      <PhoneOutlined
-                        style={{
-                          color: "#02d783",
-                          marginRight: "9px",
-                          fontSize: "19px",
-                        }}
-                      />
-                    }
-                    +39 388 328 9985
-                  </p>
-                </div>
-              </a>
-              <a
-                href="mailto:moceri.flavio@gmail.com?subject=Feedback&body=Message&send=true"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
-                  <p data-aos="fade" className="contact">
-                    {
-                      <MailOutlined
-                        style={{
-                          color: "#02d783",
-                          marginRight: "9px",
-                          fontSize: "19px",
-                        }}
-                      />
-                    }
-                    moceri.flavio@gmail.com
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://flaviomoceri.it"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
-                  <p data-aos="fade" className="contact">
-                    {
-                      <ChromeOutlined
-                        style={{
-                          color: "#02d783",
-                          marginRight: "9px",
-                          fontSize: "19px",
-                        }}
-                      />
-                    }
-                    flaviomoceri.it
-                  </p>
-                </div>
-              </a>
-              <Card data-aos="fade" className="form-mobile">
-                <ContactForm />
-              </Card>
+              <h1 className="title-contact">Do you have illustration project? Let's talk.</h1>
+              <Button onClick={showModal} className="button-contact">
+              <BsFillChatFill style={{fontSize: '20px', float: 'left', color: 'white', marginLeft: '20px'}} />
+                    <h3
+                      style={{ fontSize: '13px',
+                        color: 'white !important',
+                        letterSpacing: '1.63px',
+                        fontWeight: 700 }}
+                    >
+                      LET'S TALK NOW
+                    </h3>
+                    </Button>
             </div>
           </div>
         </Content>
@@ -810,15 +752,7 @@ const Home = () => {
       <Footer className="footer">
         <div>
           <h15 className="footer-text">
-            Coded with 💚 by{" "}
-            <a
-              className="text_footer"
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
-            >
-              @flaviomoceri
-            </a>
+          © 2021 ALL RIGHT RESEVED
           </h15>
         </div>
       </Footer>
