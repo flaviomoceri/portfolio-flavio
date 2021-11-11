@@ -546,7 +546,7 @@ const Home = () => {
             </Carousel>
           </div>
           <p id="about"></p>
-          <div style={{ backgroundColor: "#f5f5f5" }}>
+          <div style={{ backgroundColor: "#fafafa" }}>
             <Divider />
             <div>
               <div>
@@ -573,7 +573,7 @@ const Home = () => {
               }
               <div style={{ marginLeft: "15%", paddingBottom: 10 }}>
                 <Row>
-                  <Col span={20}>
+                  <Col sm={15} xs={20}>
                     <p data-aos="fade">
                       I&apos;m a novice frontend developer, I enjoy coding
                       simple things and solving new problems every day. I think
@@ -819,7 +819,7 @@ const Home = () => {
                 </h7>
               </div>
               <h1 className="title-contact">
-                Do you have illustration project? Lets talk.
+                Do you have illustration project? Let&#39;s talk.
               </h1>
               <Button onClick={showModal} className="button-contact">
                 <BsFillChatFill
@@ -838,7 +838,7 @@ const Home = () => {
                     fontWeight: 700,
                   }}
                 >
-                  LETS TALK NOW
+                  LET&#39;S TALK NOW
                 </h3>
               </Button>
             </div>
