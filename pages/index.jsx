@@ -395,7 +395,7 @@ const Home = () => {
                           fontWeight: 700,
                         }}
                       >
-                        EXPLORE WORKS⠀
+                        EXPLORE MY LIFE⠀
                         <ArrowRightOutlined
                           style={{ fontSize: "20px", marginLeft: "10px" }}
                         />

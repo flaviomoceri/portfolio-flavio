@@ -289,7 +289,7 @@
   
   }
   .main-title {
-    font-size: 43px !important;
+    font-size: 44px !important;
     line-height: 47px !important;
   }
   
@@ -304,6 +304,17 @@
     width: 100%;
     margin-top: -12%;
   }
+  
+ 
+}
+@media screen and (max-width: 406px){
+ 
+  .main-title {
+    font-size: 43px !important;
+    line-height: 47px !important;
+  }
+  
+  
   
  
 }
@@ -335,7 +346,7 @@
   
   }
   .main-title {
-    font-size: 38px !important;
+    font-size: 39px !important;
   }
   
   
