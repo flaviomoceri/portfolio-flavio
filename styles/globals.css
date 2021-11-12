@@ -565,7 +565,7 @@ border: none;
   min-height:0.8em;
   min-width:0.8em;
   
-  background-color: grey;
+  background-color: #fafafa;
 border: none;
 border-radius: 50px;
 }
@@ -575,7 +575,7 @@ border: none;
 
 }
 ::-webkit-scrollbar-thumb:active{
-  background-color: grey;
+  background-color: #fafafa;
 border: none;
 
 }
