@@ -16,6 +16,9 @@
          width: 30%;
           margin-right: 10%;
       }
+      .div-drawer{
+        margin-right: 80px;
+      }
      
      
 }
@@ -57,6 +60,9 @@
     font-size: 14px;
 
 }
+.div-drawer{
+  margin-right: 20px;
+}
 
 }
 @media screen and (max-width: 858px){
@@ -97,6 +103,13 @@
 @media screen and (max-width: 768px){
   .sfondo-onda {
     margin-top: -12%;
+  }
+  .div-drawer{
+    display: none;
+  }
+  .carddrawer{
+    width: 100%;
+    margin-left: 0px !important;
   }
   .avatar {
     display: none !important;

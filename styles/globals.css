@@ -64,6 +64,10 @@ a {
   margin-left: 15%;
 
 }
+
+
+
+
 .button-menu {
  display: none !important;
 }
@@ -85,12 +89,16 @@ a {
 .color-menu {
   color: black !important;
 }
+.ant-scrolling-effect{
+  width: calc(100%) !important;
+}
 .icon-drawer {
   text-align: center;
     margin-top: 30%;
     font-size: 24px;
     color: grey;
 }
+
 .contact-drawer-button {
   background-color: #495FEF !important;
     border-color: #495FEF !important;
