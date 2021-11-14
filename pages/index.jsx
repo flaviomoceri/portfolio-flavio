@@ -216,7 +216,7 @@ const Home = () => {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+            href="https://www.linkedin.com/in/flaviomoceri"
           >
             <LinkedinOutlined
               style={{ marginRight: 40, color: "rgb(119, 119, 121)" }}
@@ -319,7 +319,7 @@ const Home = () => {
             <Menu.Item className="margin-linkedin">
               <div>
                 <a
-                  href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+                  href="https://www.linkedin.com/in/flaviomoceri"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -352,7 +352,7 @@ const Home = () => {
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  href="https://www.linkedin.com/in/flavio-moceri-6b2a141b7/"
+                  href="https://www.linkedin.com/in/flaviomoceri"
                 >
                   <LinkedinOutlined style={{ color: "rgb(119, 119, 121)" }} />
                 </a>
