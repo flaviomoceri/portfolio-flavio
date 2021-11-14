@@ -249,14 +249,14 @@ const Home = () => {
         <ContactForm />
       </Modal>
       <Head>
-        <title>Flavio Moceri&apos;s Portfolio</title>
+        <title>Flavio Moceri</title>
         <meta
           name="description"
           content="Hi, I'm Flavio (Web Developer),
         I design and code beautifully simple things, and I love what I do.
-         I'm a novice frontend developer, I enjoy coding simple things and solving new problems every day."
+         I'm a novice frontend developer, I enjoy coding."
         ></meta>
-        <link rel="shortcut icon" type="image/png" src="fotohead.jpeg" />
+        <link rel="shortcut icon" type="image" src="fotohead.jpeg" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
