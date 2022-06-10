@@ -406,10 +406,10 @@ const Home = () => {
               </div>
             </Col>
             <Col span={8}>
-              <img className="avatar" src="mainphotos.png" />
+              <img className="avatar" src="mainphoto2.png" />
             </Col>
             <div className="div-avatar">
-              <img className="main-avatar" src="mainphotos.png" />
+              <img className="main-avatar" src="mainphoto2.png" />
             </div>
           </Row>
           <p id="skill"></p>
