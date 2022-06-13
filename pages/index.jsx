@@ -82,10 +82,10 @@ function ContactForm() {
         object :
       </label>
       <Input
-        id="object"
-        type="object"
-        name="object"
-        placeholder="Object"
+        id="subject"
+        type="subject"
+        name="subject"
+        placeholder="subject"
         className="input-email"
         style={{ marginBottom: 20, marginTop: 10 }}
         required
