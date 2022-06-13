@@ -79,7 +79,7 @@ function ContactForm() {
         <Popover content="❗ Required Field">
           <h14 style={{ color: "red" }}>*</h14>
         </Popover>{" "}
-        object :
+        subject :
       </label>
       <Input
         id="subject"
