@@ -379,7 +379,7 @@ const Home = () => {
             <Col span={20} md={9}>
               <div className="main-div">
                 <h6 className="main-subtitle">
-                  Web Developer, illustrator, graphic designer
+                  Junior Front-end Developer
                 </h6>
                 <h1 className="main-title">
                   I design and code simple things for clients.
