@@ -256,7 +256,7 @@ const Home = () => {
         I design and code beautifully simple things, and I love what I do.
          I'm a novice frontend developer, I enjoy coding."
         ></meta>
-        <link rel="shortcut icon" type="image" src="fotohead.jpeg" />
+        <link rel="shortcut icon" type="image" src="flaviomoceri.jpg" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
